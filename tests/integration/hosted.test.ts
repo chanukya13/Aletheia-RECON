@@ -18,7 +18,11 @@ afterEach(async () => {
   for (const fn of cleanup.splice(0).reverse()) await fn();
 });
 async function setup(
-  options: { maxOpen?: number; maxWorkspaces?: number } = {},
+  options: {
+    maxOpen?: number;
+    maxWorkspaces?: number;
+    temporaryStorage?: boolean;
+  } = {},
 ) {
   const directory = mkdtempSync(resolve("artifacts/tmp/hosted-")),
     app = await createHostedApp({
@@ -61,6 +65,47 @@ const importBody = () => ({
   rightsDeclaration: "local_research_only",
   rightsRationale: "Software integration fixture",
   kind: "recipe",
+});
+it("declares temporary storage and starts a clean isolated session after free-host storage loss", async () => {
+  const first = await setup({ temporaryStorage: true }),
+    original = await session(first.app);
+  const imported = await first.app.inject({
+    method: "POST",
+    url: "/api/v1/imports/text",
+    headers: original.headers,
+    payload: importBody(),
+  });
+  expect(imported.statusCode).toBe(200);
+  const caseId = imported.json().result.case.id;
+  const next = await setup({ temporaryStorage: true });
+  const health = await next.app.inject({
+    url: "/api/v1/health",
+    headers: baseHeaders,
+  });
+  expect(HealthResponse.parse(health.json()).workspaceStorage).toBe(
+    "temporary",
+  );
+  const missing = await next.app.inject({
+    url: `/api/v1/cases/${caseId}`,
+    headers: original.headers,
+  });
+  expect(missing.statusCode).toBe(404);
+  expect(missing.headers["x-recon-workspace-reset"]).toBe("1");
+  expect(missing.headers["set-cookie"]).toContain("Max-Age=0");
+  const restarted = await next.app.inject({
+    url: "/api/v1/editor-session",
+    headers: original.headers,
+  });
+  expect(restarted.statusCode).toBe(200);
+  expect(EditorSession.parse(restarted.json()).csrfToken).not.toBe(
+    original.headers["x-recon-csrf"],
+  );
+  expect(restarted.headers["set-cookie"]).not.toContain(original.cookie);
+  const crossOrigin = await next.app.inject({
+    url: "/api/v1/editor-session",
+    headers: { ...original.headers, origin: "https://other.example" },
+  });
+  expect(crossOrigin.statusCode).toBe(403);
 });
 it("allocates no workspace for public reads or health and isolates authentic editing, imports and identifiers between browsers", async () => {
   const { app, directory } = await setup();

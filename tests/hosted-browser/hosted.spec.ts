@@ -22,6 +22,12 @@ for (const width of [1440, 390])
       if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`);
     });
     await page.goto("/research");
+    const health = await page.request.get("/api/v1/health");
+    if ((await health.json()).workspaceStorage === "temporary") {
+      await expect(
+        page.getByRole("note").filter({ hasText: "Free preview" }),
+      ).toContainText("Download dossiers to keep your work");
+    }
     await expect(
       page.getByRole("button", { name: "Private workspace", exact: true }),
     ).toBeVisible();

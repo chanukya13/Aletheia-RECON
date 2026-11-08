@@ -60,6 +60,18 @@ summary:focus-visible,
 main:focus {
   outline: none;
 }
+.hosting-notice {
+  margin: 20px auto;
+  padding: 14px 18px;
+  max-width: 1280px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: #424d46;
+  font-size: 13px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
 button {
   border: 0;
   background: none;

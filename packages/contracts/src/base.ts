@@ -480,6 +480,7 @@ export const HealthResponse = z.strictObject({
   migration: z.number().int(),
   corpusRevision: Id,
   mode: z.enum(["local_read_only", "local_editor", "hosted_workspace"]),
+  workspaceStorage: z.enum(["persistent", "temporary"]).optional(),
   capabilities: z.strictObject({
     sourceReader: z.literal(true),
     editing: z.boolean(),

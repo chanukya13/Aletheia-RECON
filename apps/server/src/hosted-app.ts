@@ -14,6 +14,7 @@ export async function createHostedApp(options: {
   maxOpen?: number;
   maxWorkspaces?: number;
   maxBytes?: number;
+  temporaryStorage?: boolean;
 }) {
   const origin = normalizePublicOrigin(options.publicOrigin),
     secure = origin.startsWith("https:"),
@@ -195,8 +196,26 @@ export async function createHostedApp(options: {
             "/api/v1/literature/search",
             "/api/v1/taxonomy/candidates",
           ].includes(path);
-        if (token) lease = await store.acquire(store.verify(token));
-        else if (needsWorkspace) {
+        if (token) {
+          try {
+            lease = await store.acquire(store.verify(token));
+          } catch (error) {
+            if (
+              !options.temporaryStorage ||
+              !(error instanceof WorkspaceError) ||
+              !["WORKSPACE_TOKEN_INVALID", "WORKSPACE_UNAVAILABLE"].includes(
+                error.code,
+              )
+            )
+              throw error;
+            reply.header(
+              "Set-Cookie",
+              `${cookieName}=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0${secure ? "; Secure" : ""}`,
+            );
+            reply.header("X-Recon-Workspace-Reset", "1");
+          }
+        }
+        if (!lease && needsWorkspace) {
           const created = await store.create();
           lease = created;
           reply.header("Set-Cookie", cookie(created.token));
@@ -228,6 +247,9 @@ export async function createHostedApp(options: {
           HealthResponse.parse({
             ...result,
             mode: "hosted_workspace",
+            workspaceStorage: options.temporaryStorage
+              ? "temporary"
+              : "persistent",
             capabilities: {
               ...result.capabilities,
               editing: true,

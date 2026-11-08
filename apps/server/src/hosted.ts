@@ -6,8 +6,10 @@ const origin =
 if (!origin)
   throw new Error("RECON_PUBLIC_ORIGIN or RENDER_EXTERNAL_URL is required.");
 const directory = process.env.RECON_DATA_DIR;
-if (!directory)
-  throw new Error("RECON_DATA_DIR must point to persistent storage.");
+if (!directory) throw new Error("RECON_DATA_DIR is required.");
+const storage = process.env.RECON_STORAGE_MODE ?? "persistent";
+if (!["persistent", "temporary"].includes(storage))
+  throw new Error("RECON_STORAGE_MODE must be persistent or temporary.");
 const port = Number(process.env.PORT ?? 10000);
 if (!Number.isInteger(port) || port < 1024 || port > 65535)
   throw new Error("PORT must be an unprivileged port.");
@@ -15,6 +17,7 @@ const app = await createHostedApp({
   publicOrigin: origin,
   directory: resolve(directory),
   logger: true,
+  temporaryStorage: storage === "temporary",
   liveTaxonomy: process.env.RECON_LIVE_TAXONOMY === "1",
 });
 await app.listen({ host: "0.0.0.0", port });

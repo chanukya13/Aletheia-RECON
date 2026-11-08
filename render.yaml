@@ -2,23 +2,21 @@ services:
   - type: web
     name: aletheia-recon
     runtime: node
-    plan: 0.5c-512mb
+    plan: free
     region: singapore
     numInstances: 1
     autoDeployTrigger: off
     buildCommand: npm ci --include=dev && npm run build && npm run data:validate && npm run evaluation:run && npm run evidence:report
     startCommand: npm run start:hosted
     healthCheckPath: /api/v1/health
-    disk:
-      name: recon-private-workspaces
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: 24.21.0
       - key: NODE_ENV
         value: production
       - key: RECON_DATA_DIR
-        value: /var/data/recon
+        value: /tmp/recon
+      - key: RECON_STORAGE_MODE
+        value: temporary
       - key: RECON_LIVE_TAXONOMY
         value: "1"

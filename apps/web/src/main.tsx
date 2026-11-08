@@ -210,6 +210,14 @@ function Shell() {
         </button>
       </header>
       <main id="main" ref={main} tabIndex={-1}>
+        {health.data?.workspaceStorage === "temporary" ? (
+          <p className="hosting-notice" role="note">
+            <strong>Free preview · temporary workspace.</strong> Download
+            dossiers to keep your work. Server restarts and idle shutdowns clear
+            saved edits, imports and dossiers. Downloaded files can be imported
+            again.
+          </p>
+        ) : null}
         <ResearchJourney />
         <Routes>
           <Route path="/research" element={<ResearchHome />} />
@@ -325,6 +333,14 @@ function Shell() {
                   workspace on this server. This browser's secure cookie grants
                   access. Download dossiers for a portable copy; clearing
                   cookies removes access to this workspace.
+                </p>
+              ) : null}
+              {health.data.workspaceStorage === "temporary" ? (
+                <p>
+                  This free preview uses temporary storage. Download dossiers
+                  before leaving: server restarts and idle shutdowns erase this
+                  workspace. The next session starts fresh; you can import a
+                  downloaded dossier to inspect it again.
                 </p>
               ) : null}
               <dl className="metadata">

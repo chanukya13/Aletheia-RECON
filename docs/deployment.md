@@ -1,10 +1,16 @@
-# Production deployment
+# Hosted deployment
 
-The hosted entry point preserves the local workbench and scientific contracts. `npm run start` remains a loopback-only, single-user application. `npm run start:hosted` binds `0.0.0.0:$PORT` and requires an explicit public origin and durable data directory. No AI service key is required.
+The hosted entry point preserves the local workbench and scientific contracts. `npm run start` remains a loopback-only, single-user application. `npm run start:hosted` binds `0.0.0.0:$PORT` and requires an explicit public origin and data directory. No AI service key is required.
 
 ## Render release
 
-`render.yaml` defines one Node 24 web service in Singapore, using the smallest paid compute plan (`0.5c-512mb`) and a 1 GB disk mounted at `/var/data`. Builds install pinned dependencies, compile, validate licensed sources and generate both executed evaluation artifacts. Runtime state is stored only under `/var/data/recon`; no local user database or workspace is published. The `RENDER_EXTERNAL_URL` supplied by Render is the canonical HTTPS origin. Preview/automatic redeploys are disabled; changes are deployed deliberately.
+`render.yaml` defines one **Free** Node 24 web service in Singapore with no paid disk. `RECON_STORAGE_MODE=temporary` and `RECON_DATA_DIR=/tmp/recon` explicitly declare ephemeral workspaces. The UI displays the limitation on every page. Saved edits, imports and dossiers are lost on restarts, redeploys and idle shutdowns; users retain downloaded dossiers and can import them again. Old cookies are cleared safely after storage loss, allowing a fresh isolated session. This is a free preview, not durable production hosting.
+
+[Render's free-service documentation](https://render.com/docs/free) describes 15-minute idle shutdowns, roughly one-minute cold starts, ephemeral files and shared monthly free quotas. No paid upgrade or Pro workspace is required. Free service availability remains subject to those quotas.
+
+Builds install pinned dependencies, compile, validate licensed sources and generate both executed evaluation artifacts. No local user database or workspace is published. The `RENDER_EXTERNAL_URL` supplied by Render is the canonical HTTPS origin. Automatic redeploys are disabled; changes are deployed deliberately.
+
+For optional durable hosting later, use a paid compute instance, a persistent disk mounted at `/var/data`, `RECON_DATA_DIR=/var/data/recon`, and `RECON_STORAGE_MODE=persistent`. That mode retains strict missing-cookie/key protections and durable backup/restore behavior. No paid resource is created by the current free configuration.
 
 The readiness endpoint is `/api/v1/health`. It verifies the source/corpus runtime and the persistent directory/key without allocating a visitor workspace. HTTPS terminates at Render; fixed public-origin checks protect writes without trusting arbitrary forwarded-host headers. The application closes servers and SQLite connections on termination. Disk-backed releases have a brief restart interruption and run as one instance.
 
