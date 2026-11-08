@@ -1,6 +1,17 @@
 # Research desk UI handoff
 
-8 November 2026. The visual redesign is implemented and locally verified. Public deployment verification is recorded separately after release.
+8 November 2026. The visual redesign is implemented, deployed and verified on the public service.
+
+## Published release
+
+- [Open the research desk](https://aletheia-recon.onrender.com/research).
+- Runtime source: [`ffa84821fc65f9cfd22e2cd055d51ff32a414035`](https://github.com/chanukya13/Aletheia-RECON/commit/ffa84821fc65f9cfd22e2cd055d51ff32a414035).
+- Render deploy `dep-dbo8ummc6qcc73cvpclg` became live at `2026-11-08T15:05:10Z`, on the existing Singapore Free service. No paid resources or API keys were introduced.
+- [Independent Ubuntu CI](https://github.com/chanukya13/Aletheia-RECON/actions/runs/42492861093) passed build, types, lint, data checks, evaluation generation, 131 unit tests, 58 integration tests and 15 hosted-browser cases.
+- All 15 browser cases also passed against the actual public HTTPS URL: five each in Chromium, Firefox and WebKit. Final public screenshots, console/network checks and HTTPS/cookie/origin/CSRF checks passed.
+- Local public-release evidence is in `artifacts/design/live-browser.json`, `live-security.json`, `live-visual-inspection.json`, `linux-ci.log` and `deployment-receipt.json`. The exact deployed source archive is `aletheia-recon-ui-ffa8482.zip` in the same ignored folder. Private test traces/cookies remain excluded from Git.
+
+Subsequent handoff/README updates are documentation-only; automatic deployment remains disabled.
 
 ## Resulting experience
 

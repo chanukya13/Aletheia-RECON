@@ -1,5 +1,7 @@
 # Hosted release handoff — 8 November 2026
 
+This records the initial hosted release. See the [verified UI redesign release](ui-redesign.md) for the newer runtime and public browser verification.
+
 The application is live at [aletheia-recon.onrender.com/research](https://aletheia-recon.onrender.com/research), from [chanukya13/Aletheia-RECON](https://github.com/chanukya13/Aletheia-RECON).
 
 ## Actual infrastructure

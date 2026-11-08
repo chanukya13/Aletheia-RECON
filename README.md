@@ -6,7 +6,7 @@ The free hosted preview uses temporary private workspaces. Download dossiers to 
 
 ![The research desk: a featured historical-remedy investigation, inspectable evidence and a clear four-step path](docs/screenshots/research-desktop.png)
 
-The [UI design notes](docs/ui-redesign.md) record the visual system, original illustration, font license and verification approach. Source inspection, interpretation exclusions, measured results and reproducible exports use the existing scientific engine.
+The [UI design notes](docs/ui-redesign.md) record the visual system, original illustration, font license and verification approach. The [verified redesign release](docs/handoffs/ui-redesign.md) records the deployed source, Linux CI and real-browser results. Source inspection, interpretation exclusions, measured results and reproducible exports use the existing scientific engine.
 
 For hosted production deployment, private visitor workspaces, backups and verification, see [deployment instructions](docs/deployment.md). The local application and its existing data remain independent from the hosted service.
 
