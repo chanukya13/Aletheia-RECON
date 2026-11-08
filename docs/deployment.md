@@ -12,15 +12,15 @@ Builds install pinned dependencies, compile, validate licensed sources and gener
 
 For optional durable hosting later, use a paid compute instance, a persistent disk mounted at `/var/data`, `RECON_DATA_DIR=/var/data/recon`, and `RECON_STORAGE_MODE=persistent`. That mode retains strict missing-cookie/key protections and durable backup/restore behavior. No paid resource is created by the current free configuration.
 
-The readiness endpoint is `/api/v1/health`. It verifies the source/corpus runtime and the persistent directory/key without allocating a visitor workspace. HTTPS terminates at Render; fixed public-origin checks protect writes without trusting arbitrary forwarded-host headers. The application closes servers and SQLite connections on termination. Disk-backed releases have a brief restart interruption and run as one instance.
+The readiness endpoint is `/api/v1/health`. It verifies the source/corpus runtime and the configured directory/key without allocating a visitor workspace. HTTPS terminates at Render; fixed public-origin checks protect writes without trusting arbitrary forwarded-host headers. The application closes servers and SQLite connections on termination. Optional disk-backed releases have a brief restart interruption and run as one instance.
 
 ## Private visitor workspaces
 
-Public browsing uses the immutable seed corpus. The first edit, live lookup or editor session allocates a private SQLite database. A random, HMAC-authenticated, HttpOnly, SameSite cookie is the access credential. HTTPS cookies use the `__Host-` prefix and `Secure`. The signing key is created only on persistent storage and retained across restarts. Existing databases without their key cause startup failure rather than silent replacement.
+Public browsing uses the immutable seed corpus. The first edit, live lookup or editor session allocates a private SQLite database. A random, HMAC-authenticated, HttpOnly, SameSite cookie is the access credential. HTTPS cookies use the `__Host-` prefix and `Secure`. The signing key is created in the configured data directory. Persistent hosting retains it across restarts; free hosting loses it with the temporary databases. Existing databases without their key cause startup failure rather than silent replacement.
 
 Each visitor's cases, imports, pending studies, scenarios, results and dossiers are isolated in a separate database. A guessed record ID from another visitor returns unavailable. Shared seed assertions remain pending under the original policy. Existing request validation, CSRF, source rights, immutable revisions and offline replay remain active.
 
-The initial bounded service allows 96 persistent workspaces, four open applications at once, eight MiB per database, twenty new workspaces per minute and 1,800 requests per minute. Idle database handles are evicted and reopened without deleting records. Capacity failures are explicit and preserve existing data. These are deployment limits, not claims of unlimited public scale. Raise limits only after checking memory/disk usage. No automatic data deletion is performed.
+The initial bounded service allows 96 workspaces, four open applications at once, eight MiB per database, twenty new workspaces per minute and 1,800 requests per minute. Idle database handles are evicted and reopened without deleting records. Capacity failures are explicit and preserve existing data. These are deployment limits, not claims of unlimited public scale. Raise limits only after checking memory/disk usage. The application runs no automatic deletion job; free hosting can reset its filesystem independently.
 
 The workspace is browser-specific. Clearing the access cookie removes that browser's access; there is no account-based recovery. Users should download dossiers for portable records. This behavior is explained in the workspace-status dialog. Imported private originals remain subject to their recorded rights and are omitted from portable exports when required.
 
@@ -33,6 +33,8 @@ The workspace is browser-specific. Clearing the access cookie removes that brows
 The pinned GitHub Actions workflow independently builds and tests on Linux. The local verification reports live under `artifacts/deployment`; source/evaluation manifests preserve the task and denominator of measured results. A successful build or queued cloud deploy is not treated as a live deployment.
 
 ## Backup and restore
+
+These operations apply to optional persistent hosting. Render Free has no SSH access or durable disk: use downloadable dossiers for portable records there.
 
 Use SQLite's online backup API rather than copying active database files or restoring a generic disk snapshot:
 

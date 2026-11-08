@@ -1,8 +1,10 @@
 import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   testDir: "./tests/hosted-browser",
-  timeout: 90000,
-  expect: { timeout: 10000 },
+  // Public free hosting includes network latency and workspace initialization.
+  // Keep local waits strict; live assertions still fail on HTTP/console errors.
+  timeout: process.env.RECON_TEST_URL ? 180000 : 90000,
+  expect: { timeout: process.env.RECON_TEST_URL ? 30000 : 10000 },
   workers: 1,
   reporter: [
     ["list"],

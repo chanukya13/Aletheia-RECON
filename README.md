@@ -1,5 +1,9 @@
 # Aletheia RECON
 
+[Open the live research workbench](https://aletheia-recon.onrender.com/research) · [Verified Linux release](https://github.com/chanukya13/Aletheia-RECON/actions/runs/42484850949)
+
+The free hosted preview uses temporary private workspaces. Download dossiers to retain your work across server restarts and idle shutdowns; downloaded dossiers support import and offline replay. The first request after an idle shutdown can take about a minute.
+
 For hosted production deployment, private visitor workspaces, backups and verification, see [deployment instructions](docs/deployment.md). The local application and its existing data remain independent from the hosted service.
 
 A local research workbench for auditing whether evidence concerns the preparation actually recorded in a historical source. All five phases implement source inspection/annotation, material curation, comparison, scenarios, exact robustness/clarification, frozen dossiers, rights-aware exports, bibliography downloads, isolated import and offline decision replay. The evaluation ledger shows actual deterministic baseline/ablation outputs with authentic accuracy explicitly unscored while independent labels remain unavailable.
