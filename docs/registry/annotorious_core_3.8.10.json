@@ -1,0 +1,10 @@
+{
+  "version": "3.8.10",
+  "gitHead": "c08696b105c28ef95512032ff034987f608f5201",
+  "dist.integrity": "sha512-c3xM7e7gzP2S83tX3LQlBG3L4DPzTcFYIQ+k/rrtNKi86NwN0x5P4oCpgu/ZZF5JLtCcaIqERC2pzJ+vv5WZFQ==",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "url": "git+https://github.com/annotorious/annotorious.git",
+    "type": "git"
+  }
+}

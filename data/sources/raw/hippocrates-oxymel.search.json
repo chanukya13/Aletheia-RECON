@@ -1,0 +1,353 @@
+{
+  "@context": "http://iiif.io/api/search/1/context.json",
+  "@id": "https://iiif.wellcomecollection.org/search/v0/b33291408_0003?q=oxymel",
+  "@type": "sc:AnnotationList",
+  "within": {
+    "@type": "sc:Layer",
+    "total": 20
+  },
+  "resources": [
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0183.jp2/h0r472,3525,170,48",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0183.jp2#xywh=472,3525,170,48"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0296.jp2/h1r281,2040,224,67",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0296.jp2#xywh=281,2040,224,67"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0297.jp2/h2r1591,439,217,64",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0297.jp2#xywh=1591,439,217,64"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0299.jp2/h3r1077,822,221,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0299.jp2#xywh=1077,822,221,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0309.jp2/h4r1505,777,220,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0309.jp2#xywh=1505,777,220,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0318.jp2/h5r1978,2415,227,69",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0318.jp2#xywh=1978,2415,227,69"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0321.jp2/h6r1268,1026,221,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0321.jp2#xywh=1268,1026,221,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0321.jp2/h7r153,3394,220,67",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel."
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0321.jp2#xywh=153,3394,220,67"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0322.jp2/h8r1970,2336,212,68",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0322.jp2#xywh=1970,2336,212,68"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0328.jp2/h9r1775,1933,226,69",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel."
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0328.jp2#xywh=1775,1933,226,69"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0332.jp2/h10r1132,2230,230,69",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymeli"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0332.jp2#xywh=1132,2230,230,69"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0338.jp2/h11r993,667,210,69",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0338.jp2#xywh=993,667,210,69"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0338.jp2/h12r1432,1243,213,69",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0338.jp2#xywh=1432,1243,213,69"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0340.jp2/h13r1565,1999,211,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0340.jp2#xywh=1565,1999,211,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h14r1264,522,225,70",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0344.jp2#xywh=1264,522,225,70"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h15r447,1027,207,68",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0344.jp2#xywh=447,1027,207,68"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h16r957,2450,225,68",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel."
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0344.jp2#xywh=957,2450,225,68"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0345.jp2/h17r1123,2583,236,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel;"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0345.jp2#xywh=1123,2583,236,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0345.jp2/h18r1188,2828,220,66",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel,"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0345.jp2#xywh=1188,2828,220,66"
+    },
+    {
+      "@id": "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0353.jp2/h19r151,1510,207,65",
+      "@type": "oa:Annotation",
+      "motivation": "sc:painting",
+      "resource": {
+        "@type": "cnt:ContentAsText",
+        "chars": "oxymel"
+      },
+      "on": "https://iiif.wellcomecollection.org/presentation/b33291408_0003/canvases/b33291408_0003_0353.jp2#xywh=151,1510,207,65"
+    }
+  ],
+  "hits": [
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0183.jp2/h0r472,3525,170,48"
+      ],
+      "match": "oxymel,",
+      "before": "i, 26; and Pautus Aieinera, B. 1,78, Syd. Soc. edition. * The maza was a sort of pudding ov cake made from barleymeal mixed up with water, oil, milk, ",
+      "after": " hydromel, or the like. It also was a very ancient invention, for it is mentioned in one of the works of Hesiod, which is universally allowed to be ge"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0296.jp2/h1r281,2040,224,67"
+      ],
+      "match": "oxymel,",
+      "before": "of sponges, and others of bags, or something of the like kind. And they differ, in the same manner, with regard to the use and disuse of the bath, of ",
+      "after": " of hydromel, and of water, of wine, and of ptisan, either giving of the strained juice only, or of the barley portion only; and some, with regard to "
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0297.jp2/h2r1591,439,217,64"
+      ],
+      "match": "oxymel,",
+      "before": "d to these means, he gives definitions of those cases which require venesection and purging, and those in which one should use hydromel for drink, or ",
+      "after": " or water until the crisis, without giving any food; and those in which the juice of ptisan is to be used, or the barley along with it, and when food "
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0299.jp2/h3r1077,822,221,66"
+      ],
+      "match": "oxymel,",
+      "before": "and of these some require the unstrained ptisan, and some the strained, as also some require still more substantial food, and, moreover, some require ",
+      "after": " or hydromel, and some water, or wine. Wherefore to those physicians who have culti- vated the Art upon experience alone, that only appears beneficial"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0309.jp2/h4r1505,777,220,66"
+      ],
+      "match": "oxymel,",
+      "before": " withhold the draught until he thinks that the food has descended to the lower part of the belly ; and if any pain be present, the patient should use ",
+      "after": " hot if it is winter, and cold if it is summer; and, if there be much thirst, he should take hydromel and water.’ Then, if any pain be present, or any"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0318.jp2/h5r1978,2415,227,69"
+      ],
+      "match": "oxymel,",
+      "before": " a heated state, and heaviness of the head.! , 14. One must determine by such marks as these, when sweet, strong, and dark wine, hydromel, water, and ",
+      "after": " should be given in acute diseases.2_ Wherefore the sweet affects the head less than the strong, attacks the brain less, evacuates the bowels more tha"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0321.jp2/h6r1268,1026,221,66",
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0321.jp2/h7r153,3394,220,67"
+      ],
+      "match": "oxymel, oxymel.",
+      "before": " bad, impure, black, and not fragrant, for the boiling will remove the most of its bad qualities and appearances. 16. You will find the drink, called ",
+      "after": " It may suit well to drink a little of this at night before the draught of ptisan, and when a considerable interval of time has passed after the draug"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0322.jp2/h8r1970,2336,212,68"
+      ],
+      "match": "oxymel",
+      "before": "r promotes expectoration, but does less than the others in this respect, if used alone through the whole complaint. But if taken intermediate between ",
+      "after": " and hydromel, in small quantity, it promotes expectoration from the change which it occasions in the qualities of these drinks, for it produces, as i"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0328.jp2/h9r1775,1933,226,69"
+      ],
+      "match": "oxymel.",
+      "before": " rule that clysters should be admi- nistered regularly every day during the first. days of the fever. After purging comes the cooling drinks, such as ",
+      "after": " The administration of farinaceous food in a liquid state, that is to say, of unstrained ptisan, is to be regulated by the state of the sputa and urin"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0332.jp2/h10r1132,2230,230,69"
+      ],
+      "match": "oxymeli",
+      "before": " difficilis. Dehine egrotantis corpus non valet tantum sustinere nutrimentum, quantum sanitatis tempore solitum videbatur. Item mulsum ex aceto (quod ",
+      "after": " appellavit) sine discretione accipimus. Est etiam immodica usque ad septimum diem cibi abstinentia, quam custodiendam ordinavit.' -Quippe cum nullus "
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0338.jp2/h11r993,667,210,69",
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0338.jp2/h12r1432,1243,213,69"
+      ],
+      "match": "oxymel oxymel",
+      "before": "etained, whether it be attended with pain of the side or not, he ought to lie quiet until the food descend to the lower region of the bowels, and use ",
+      "after": " is to be discon- tinued, until the matters descend to the lower part of the bowels, and then they are to be evacuated by a clyster. But if the ardent"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0340.jp2/h13r1565,1999,211,66"
+      ],
+      "match": "oxymel",
+      "before": "reclined in the same position, and the extremities are cold, the greatest care and precaution are necessary ; nothing should be given to them, except ",
+      "after": " diluted with water; no draught should be administered, until the fever abate and the urine be concocted; the patient should be laid in a dark apartme"
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h14r1264,522,225,70",
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h15r447,1027,207,68",
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0344.jp2/h16r957,2450,225,68"
+      ],
+      "match": "oxymel, oxymel oxymel.",
+      "before": "s on the subject. See further Littré, tom. ii, p. 382. of thick sputa, and of smooth, thin urine. In fever attended with singultus, give assafoetida, ",
+      "after": " The medicine is to be adminis- tered on the foxteth day; on the first three days after the com- mencement, a clyster should be given, and if it does "
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0345.jp2/h17r1123,2583,236,66",
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0345.jp2/h18r1188,2828,220,66"
+      ],
+      "match": "oxymel; oxymel,",
+      "before": "of these come on spontaneously, that will carry off the disease. A linctus for pneumonia: Galbanum and pine-fruit in Attic honey; and southernwood in ",
+      "after": " and, having strained it, to give it to drmk; it answers well, also, in diseases of the liver, and in severe pains proceeding from the diaphragm, and "
+    },
+    {
+      "@type": "search:Hit",
+      "annotations": [
+        "https://iiif.wellcomecollection.org/annotations/b33291408_0003/b33291408_0003_0353.jp2/h19r151,1510,207,65"
+      ],
+      "match": "oxymel",
+      "before": "e boiled milk of asses: or having shaved the head apply cold things to it if in the summer season. 28. The sesamoides? purges upwards when pounded in ",
+      "after": " to the amount of a drachm and a half, and drunk ; it is combined with the hellebores, to the amount of the third part, and thus it is less apt to pro"
+    }
+  ]
+}

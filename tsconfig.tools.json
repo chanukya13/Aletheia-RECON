@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "declaration": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": [
+    "tools",
+    "tests",
+    "vitest.config.ts",
+    "playwright.config.ts",
+    "playwright.hosted.config.ts",
+    "eslint.config.js"
+  ]
+}

@@ -1,0 +1,231 @@
+.dossier-workspace {
+  padding-bottom: 70px;
+}
+.dossier-workspace h1 {
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -1.4px;
+  margin: 14px 0 18px;
+}
+.dossier-workspace > p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.dossier-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.dossier-workspace section {
+  min-width: 0;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px;
+  margin: 25px 0;
+}
+.dossier-workspace h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.dossier-workspace h3 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.dossier-workspace p,
+.dossier-workspace li {
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  margin: 12px 0;
+}
+.dossier-workspace ul {
+  padding-left: 22px;
+}
+.dossier-workspace article {
+  padding: 19px 0;
+  border-bottom: 1px solid var(--border);
+}
+.dossier-workspace a {
+  color: var(--teal);
+}
+.dossier-workspace label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+.dossier-workspace input,
+.dossier-workspace textarea,
+.dossier-workspace select {
+  font: inherit;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #c5d0c7;
+  border-radius: 7px;
+  background: white;
+  color: #243d31;
+}
+.dossier-notice {
+  padding: 22px;
+  margin: 24px 0;
+  background: #fbf5e5;
+  border: 1px solid #e5d7ae;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.dossier-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 26px 0;
+}
+.dossier-workspace .primary-button,
+.dossier-workspace .secondary-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+}
+.dossier-workspace .primary-button {
+  color: white;
+}
+.dossier-workspace .hash {
+  font:
+    12px/1.8 ui-monospace,
+    monospace;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.dossier-workspace dl {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 14px;
+}
+.dossier-workspace dd {
+  margin: 0;
+}
+.dossier-workspace summary {
+  cursor: pointer;
+  padding: 12px 0;
+  color: var(--teal);
+  font-size: 14px;
+}
+.dossier-workspace pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-height: 550px;
+  overflow: auto;
+  padding: 18px;
+  background: #f6f8f4;
+  border-radius: 8px;
+  font:
+    12px/1.8 ui-monospace,
+    monospace;
+}
+.dossier-workspace .text-button {
+  display: block;
+  margin: 16px 0;
+  padding: 10px 0;
+}
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.metric-grid strong {
+  display: block;
+  font-size: 30px;
+  color: var(--teal);
+}
+.metric-grid span {
+  font-size: 12px;
+  color: #536158;
+}
+.table-scroll {
+  overflow: auto;
+}
+.dossier-workspace table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.dossier-workspace th,
+.dossier-workspace td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dossier-workspace caption {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+}
+.app-header > nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.app-header .nav-link {
+  border-color: transparent;
+}
+.app-header .nav-link[aria-current="page"] {
+  border-color: var(--teal);
+}
+@media (max-width: 700px) {
+  .app-header {
+    height: auto;
+    min-height: 88px;
+    gap: 0 16px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+  }
+  .dossier-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .metric-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dossier-workspace section {
+    padding: 20px;
+  }
+  .dossier-workspace dl {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .dossier-actions > * {
+    width: 100%;
+  }
+  .app-header {
+    flex-wrap: wrap;
+  }
+  .app-header > nav {
+    order: 3;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    padding: 10px 0;
+  }
+  .dossier-workspace .table-scroll {
+    margin: 0 -8px;
+  }
+  .dossier-workspace .secondary-button {
+    white-space: normal;
+  }
+}
+.dossier-link {
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .app-header > nav {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+}

@@ -1,0 +1,126 @@
+.research-workspace {
+  padding-block: 2.5rem 5rem;
+  max-width: 1100px;
+}
+.research-workspace h1 {
+  margin-block: 0.6rem 1rem;
+}
+.research-workspace section {
+  margin-top: 2.5rem;
+}
+.research-search,
+.research-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-block: 1.5rem;
+}
+.research-search label {
+  display: grid;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 180px;
+}
+.research-workspace input:not([type="checkbox"]),
+.research-workspace select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border, #d6ddd6);
+  border-radius: 7px;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 1rem;
+}
+.research-card {
+  background: white;
+  border: 1px solid #dce1dc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-block: 1rem;
+  overflow-wrap: anywhere;
+}
+.research-card blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid #b0c4bb;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+.research-card h3 {
+  margin-block: 0.4rem;
+}
+.research-card .eyebrow {
+  line-height: 1.8;
+}
+.research-notice {
+  background: #fcf6e6;
+  border: 1px solid #e6d59e;
+  padding: 1.2rem;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+.excluded-contribution {
+  border-style: dashed;
+  background: #f1f3f0;
+}
+.research-workspace .hash-value {
+  overflow-wrap: anywhere;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+.research-actions {
+  align-items: center;
+}
+.research-actions label {
+  line-height: 1.7;
+}
+.outcome-selectors {
+  margin-top: 2rem;
+}
+.outcome-selectors label {
+  display: grid;
+  gap: 0.6rem;
+}
+.outcome-ratio {
+  font-size: 3.5rem;
+  color: #246451;
+  margin: 0.8rem 0;
+  font-variant-numeric: tabular-nums;
+}
+.research-workspace .table-scroll {
+  overflow-x: auto;
+  margin-block: 1rem;
+}
+.research-workspace table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85rem;
+}
+.research-workspace th,
+.research-workspace td {
+  padding: 0.8rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #dce1dc;
+}
+.research-workspace caption {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .research-card {
+    padding: 1rem;
+  }
+  .research-search button {
+    width: 100%;
+  }
+  .research-workspace {
+    padding-top: 1.5rem;
+  }
+}

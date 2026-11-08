@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Source and rights hashes identify exact retained bytes across operating systems.
+data/** -text

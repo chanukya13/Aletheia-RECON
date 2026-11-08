@@ -1,0 +1,13 @@
+{
+  "version": "5.1.0",
+  "gitHead": "31fb117afde3ef305b2e1d99bde539bf6300bc62",
+  "dist.integrity": "sha512-bab9+WefZljqQ8jT0qRwVmTyzAUU63K97QIQD3agynIBrb6sa5M2eAy8Hv8K3p4V9+ONVYZKtGYl4Dg+/5Gumw==",
+  "license": "Apache-2.0",
+  "repository": {
+    "url": "git+https://github.com/erdtman/canonicalize.git",
+    "type": "git"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

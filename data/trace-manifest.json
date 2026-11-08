@@ -1,0 +1,132 @@
+{
+  "version": "recon-trace-1",
+  "corpusHash": "602f857c31da3d7e8c989ef3d32c7fffc14dd36095f12e99d0dcfed42e7aa1ca",
+  "entries": [
+    {
+      "spanId": "span-eyesalve-recipe",
+      "role": "translation",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-cropleek",
+      "role": "translation",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-edition-gloss",
+      "role": "editorial_note",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-nine-days",
+      "role": "translation",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-eye-route",
+      "role": "translation",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-cropleac-original",
+      "role": "original_language_edition",
+      "workGroup": "Cockayne 1865 edition"
+    },
+    {
+      "spanId": "span-oxymel-use",
+      "role": "translation",
+      "workGroup": "Adams 1849 edition"
+    },
+    {
+      "spanId": "span-cropleac-ambiguity",
+      "role": "modern_interpretation",
+      "workGroup": "furner-pardoe-2020.r1"
+    },
+    {
+      "spanId": "span-2020-paired",
+      "role": "modern_tested_material",
+      "workGroup": "furner-pardoe-2020.r1"
+    },
+    {
+      "spanId": "span-2020-reconstruction",
+      "role": "modern_tested_material",
+      "workGroup": "furner-pardoe-2020.r1"
+    },
+    {
+      "spanId": "span-2018-formulations",
+      "role": "modern_tested_material",
+      "workGroup": "fuchs-2018.r1"
+    },
+    {
+      "spanId": "span-2018-mic-table",
+      "role": "modern_tested_material",
+      "workGroup": "fuchs-2018.r1"
+    },
+    {
+      "spanId": "span-2018-preparation",
+      "role": "modern_tested_material",
+      "workGroup": "fuchs-2018.r1"
+    },
+    {
+      "spanId": "span-2018-plants",
+      "role": "modern_tested_material",
+      "workGroup": "fuchs-2018.r1"
+    },
+    {
+      "spanId": "span-2018-mic-method",
+      "role": "modern_tested_material",
+      "workGroup": "fuchs-2018.r1"
+    },
+    {
+      "spanId": "span-2023-honeys",
+      "role": "modern_tested_material",
+      "workGroup": "harrison-2023.r1"
+    },
+    {
+      "spanId": "span-2023-assay",
+      "role": "modern_tested_material",
+      "workGroup": "harrison-2023.r1"
+    },
+    {
+      "spanId": "span-2023-response-additivity",
+      "role": "modern_tested_material",
+      "workGroup": "harrison-2023.r1"
+    },
+    {
+      "spanId": "span-2023-bliss",
+      "role": "modern_tested_material",
+      "workGroup": "harrison-2023.r1"
+    }
+  ],
+  "terms": [
+    {
+      "forms": [
+        "cropleac",
+        "cropleek",
+        "Allium cepa",
+        "Allium porrum",
+        "Allium oleraceum"
+      ],
+      "candidateIds": [
+        "candidate-onion",
+        "candidate-leek",
+        "candidate-edition-oleraceum"
+      ],
+      "spanIds": [
+        "span-cropleac-original",
+        "span-cropleek",
+        "span-edition-gloss",
+        "span-cropleac-ambiguity"
+      ]
+    },
+    {
+      "forms": [
+        "oxymel"
+      ],
+      "candidateIds": [],
+      "spanIds": [
+        "span-oxymel-use"
+      ]
+    }
+  ]
+}

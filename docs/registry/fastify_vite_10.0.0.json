@@ -1,0 +1,13 @@
+{
+  "version": "10.0.0",
+  "dist.integrity": "sha512-YgLsEIcZzzPDu70ycIZ0Q/DQlGyfvbuh8nBhRJ5fuNDdq1HyOVjHjFUgKO+TOkOafsfDtGMo+SVh047J/4w9QA==",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/fastify/fastify-vite.git",
+    "type": "git"
+  },
+  "peerDependencies": {
+    "vite": ">=6",
+    "fastify": ">=5"
+  }
+}

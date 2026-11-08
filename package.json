@@ -1,0 +1,80 @@
+{
+  "name": "aletheia-recon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "packageManager": "npm@12.2.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build:packages && tsx apps/server/src/index.ts --dev",
+    "build:packages": "tsc -b packages/contracts packages/core",
+    "build": "npm run build:packages && vite build --config apps/web/vite.config.ts && tsc -p apps/server",
+    "start": "node apps/server/dist/index.js",
+    "start:hosted": "node apps/server/dist/hosted.js",
+    "typecheck": "npm run build:packages && tsc -p apps/server --noEmit && tsc -p apps/web --noEmit && tsc -p tsconfig.tools.json --noEmit",
+    "lint": "eslint apps packages tools tests",
+    "data:build": "npm run build:packages && tsx tools/build-corpus.ts",
+    "data:validate": "npm run build:packages && tsx tools/validate-data.ts",
+    "db:seed": "npm run build:packages && tsx tools/seed.ts",
+    "test:unit": "node tools/run-tests.mjs unit",
+    "test:integration": "node tools/run-tests.mjs integration",
+    "test:e2e": "node tools/build-annotation-spike.mjs && node tools/run-browser-tests.mjs",
+    "licenses": "tsx tools/licenses.ts",
+    "data:review-gate": "npm run build:packages && tsx tools/review-gate.ts",
+    "format": "prettier --write apps packages tools tests *.ts *.js *.json --ignore-unknown",
+    "data:review-packet": "npm run build:packages && tsx tools/review-packet.ts",
+    "verify:phase1": "node tools/verify-phase1.mjs",
+    "verify:phase2": "node tools/verify-phase2.mjs",
+    "probe:taxonomy": "tsx tools/probe-taxonomy.ts",
+    "verify:phase3": "node tools/verify-phase3.mjs",
+    "benchmark:phase4": "tsx tools/benchmark-phase4.ts",
+    "verify:phase4": "node tools/verify-phase4.mjs",
+    "evaluation:run": "tsx tools/evaluate.ts",
+    "evidence:report": "npm run build:packages && tsx tools/evidence-study.ts",
+    "replay": "node tools/replay-dossier.mjs",
+    "test:cross-browser": "node tools/run-cross-browser-tests.mjs",
+    "test:hosted": "node tools/run-hosted-browser-tests.mjs",
+    "performance:phase5": "node tools/performance-phase5.mjs",
+    "verify:clean": "node tools/verify-clean.mjs",
+    "verify:phase5": "node tools/verify-phase5.mjs",
+    "verify:extensions": "node tools/verify-extensions.mjs",
+    "verify:product": "node tools/verify-product.mjs",
+    "verify:deployment": "node tools/verify-deployment.mjs",
+    "benchmark:phase5": "tsx tools/benchmark-phase4.ts --phase5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@eslint/js": "9.39.1",
+    "@playwright/test": "1.64.0",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.2.0",
+    "@xmldom/xmldom": "0.8.15",
+    "eslint": "9.39.1",
+    "fast-check": "4.3.0",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "7.3.7",
+    "vitest": "4.1.12"
+  },
+  "overrides": {
+    "playwright-core": "1.64.0",
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.4"
+    }
+  },
+  "allowScripts": {
+    "better-sqlite3": true,
+    "esbuild": true
+  }
+}

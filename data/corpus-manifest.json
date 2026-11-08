@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "recon-v1",
+  "corpusRevision": "corpus-2026-11-05.1",
+  "corpusSha256": "623a6697e3bd9fc129cec099e989860cd04c563f1fe3049b5415dcb95c9fe0fd",
+  "caseFamilyCount": 2,
+  "studyCount": 3,
+  "evidenceUnitCount": 14,
+  "sourceCount": 6,
+  "assertionCount": 102,
+  "reviewStatus": "agent_checked_pending_human_review",
+  "outcomeCoverage": {
+    "numericallyCuratedUnits": 8,
+    "pendingArmOutcomeReview": 6
+  },
+  "sources": [
+    {
+      "id": "cockayne-translation.r1",
+      "rawFile": "data/sources/raw/leechdoms-0085.alto.xml",
+      "rawUrl": "https://api.wellcomecollection.org/text/alto/b21924235_0002/b21924235_0002_0085.jp2",
+      "rawSha256": "8c825015791ae1f40c4dacbccd11d48031a33943abcf9c777afa2a5216eaa29b",
+      "textSha256": "1782c2fd9e46e7d2c3e37ba4e72a61454e0c334ef6b9cc9780d542190a0f2660",
+      "contentHash": "03f2f57dfee1e1fb18df0abe484a85e9f8feb94a9ca34c57460199f2ccd915da",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "credit": "Cockayne, Leechdoms II (1865), p. 35. Wellcome Collection / Royal College of Physicians of Edinburgh.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://wellcomecollection.org/works/dq5gv7ch",
+        "verifiedAt": "2026-11-05T18:44:17.242Z",
+        "evidenceFile": "data/sources/raw/leechdoms-vol2.manifest.json",
+        "evidenceSha256": "88df7413e645aa6496a21ba5c1d7d60f677accc7aa204304b292ccb017bd5f1e"
+      }
+    },
+    {
+      "id": "cockayne-original.r1",
+      "rawFile": "data/sources/raw/leechdoms-0084.alto.xml",
+      "rawUrl": "https://api.wellcomecollection.org/text/alto/b21924235_0002/b21924235_0002_0084.jp2",
+      "rawSha256": "238e83a2ba6a53af2cf6ae69974c551930e015f676ce979fb1502d931d4507f0",
+      "textSha256": "5cd715ac76e8f1a3e5e1488a5523a5b668a52ae4a54f08a32b5748969297a66d",
+      "contentHash": "dd4d197f718644315686b249641a62af536dbce1425365c37d65f462d8f0bd29",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "credit": "Cockayne, Leechdoms II (1865), p. 34. Wellcome Collection / Royal College of Physicians of Edinburgh.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://wellcomecollection.org/works/dq5gv7ch",
+        "verifiedAt": "2026-11-05T18:45:28.691Z",
+        "evidenceFile": "data/sources/raw/leechdoms-vol2.manifest.json",
+        "evidenceSha256": "88df7413e645aa6496a21ba5c1d7d60f677accc7aa204304b292ccb017bd5f1e"
+      }
+    },
+    {
+      "id": "adams-oxymel.r1",
+      "rawFile": "data/sources/raw/hippocrates-0321.alto.xml",
+      "rawUrl": "https://api.wellcomecollection.org/text/alto/b33291408_0003/b33291408_0003_0321.jp2",
+      "rawSha256": "499b49b869767fc5e4d02ba065aa75693fe8a506688434f0fb0c4421248d6318",
+      "textSha256": "e9e9fc02706f90d95f5b7e259cf53c9e606925f76374aface5f02612e5300490",
+      "contentHash": "93e316185dc4d3233efd19c1cbe1adaecc5c89df104612a1bdf1e1952160485f",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "credit": "Hippocrates, translated by Francis Adams (1849), Vol. I, p. 301. Wellcome Collection.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://wellcomecollection.org/works/e2gwb7bm",
+        "verifiedAt": "2026-11-05T18:50:20.267Z",
+        "evidenceFile": "data/sources/raw/hippocrates-vol1.manifest.json",
+        "evidenceSha256": "797482ff9e93b546ca02631d3d97dcbce75afd9de61625c55ff8e756d28a8374"
+      }
+    },
+    {
+      "id": "fuchs-2018.r1",
+      "rawFile": "data/sources/raw/PMC6261618.xml",
+      "rawUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6261618/fullTextXML",
+      "rawSha256": "a4479a5f248564e4206f75cce628818beb2731c836769e0b4a40211116bbd83b",
+      "textSha256": "3d299f640e6aea1487b8905f65ba03465f431b0e787fbe4f42d800b17dbba7d9",
+      "contentHash": "86b3c59553667f022431b4fb54369f3604d1ece4681f5f0d4417d8bab11a6ae7",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "credit": "Amanda L Fuchs, Alan J Weaver Jr, Brian P Tripet, Mary Cloud B Ammons, Martin Teintze, Valérie Copié, Karsten Becker (2018). Characterization of the antibacterial activity of Bald’s eyesalve against drug resistant Staphylococcus aureus and Pseudomonas aeruginosa. DOI: 10.1371/journal.pone.0208108. CC0. Text normalized for display; figures excluded.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://europepmc.org/articles/PMC6261618",
+        "verifiedAt": "2026-11-05T18:43:42.615Z",
+        "evidenceFile": "data/sources/raw/PMC6261618.xml",
+        "evidenceSha256": "a4479a5f248564e4206f75cce628818beb2731c836769e0b4a40211116bbd83b"
+      }
+    },
+    {
+      "id": "furner-pardoe-2020.r1",
+      "rawFile": "data/sources/raw/PMC7387442.xml",
+      "rawUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7387442/fullTextXML",
+      "rawSha256": "e0926b48da93e75f55cd363318893f337f37057a02d25661542e1bf059e71ff3",
+      "textSha256": "0428c5c2d643b9e16cb564d54766b6377c05232eff97164bd8030d2164a7ba78",
+      "contentHash": "cd31b725ff89781dfd0e34d2cf2be74b053dbd943fe686dac0233cb35fec5a3f",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Jessica Furner-Pardoe, Blessing O. Anonye, Ricky Cain, John Moat, Catherine A. Ortori, Christina Lee, David A. Barrett, Christophe Corre, Freya Harrison (2020). Anti-biofilm efficacy of a medieval treatment for bacterial infection requires the combination of multiple ingredients. DOI: 10.1038/s41598-020-69273-8. CC BY 4.0. Text normalized for display; figures excluded.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://europepmc.org/articles/PMC7387442",
+        "verifiedAt": "2026-11-05T18:43:44.146Z",
+        "evidenceFile": "data/sources/raw/PMC7387442.xml",
+        "evidenceSha256": "e0926b48da93e75f55cd363318893f337f37057a02d25661542e1bf059e71ff3"
+      }
+    },
+    {
+      "id": "harrison-2023.r1",
+      "rawFile": "data/sources/raw/PMC10433418.xml",
+      "rawUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10433418/fullTextXML",
+      "rawSha256": "efb2a06b35f0f73f8d283435c5f87fb9b1814656be4a8ce3b7356fef0d7ee4d7",
+      "textSha256": "b3b2f4fad2b0a8003136767df439d3be6f9029f0db95fd2ea5011e90b09e3106",
+      "contentHash": "0861a56a07460b2001b0934d1b8d4de3c701e39f819968251dbfa9fae87702de",
+      "rights": {
+        "decision": "bundle_allowed",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Freya Harrison, Anisa Blower, Christopher de Wolf, Erin Connelly (2023). Sweet and sour synergy: exploring the antibacterial and antibiofilm activity of acetic acid and vinegar combined with medical-grade honeys. DOI: 10.1099/mic.0.001351. CC BY 4.0. Text normalized for display; figures excluded.",
+        "storage": true,
+        "display": true,
+        "redistribution": true,
+        "restrictions": "Attribution retained. Article figures, supplementary files and separately credited third-party material are excluded. Historical text is edition-specific.",
+        "verificationUrl": "https://europepmc.org/articles/PMC10433418",
+        "verifiedAt": "2026-11-05T18:43:45.883Z",
+        "evidenceFile": "data/sources/raw/PMC10433418.xml",
+        "evidenceSha256": "efb2a06b35f0f73f8d283435c5f87fb9b1814656be4a8ce3b7356fef0d7ee4d7"
+      }
+    }
+  ]
+}

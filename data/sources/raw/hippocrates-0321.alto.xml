@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation />
+    <OCRProcessing ID="OCR_1">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareCreator>Tesseract contributors</softwareCreator>
+          <softwareName>Tesseract Open Source OCR Engine</softwareName>
+          <softwareVersion>4.0.0-beta.1-270-g5a56</softwareVersion>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Layout>
+    <Page PHYSICAL_IMG_NR="322" ID="PAGE_322" WIDTH="2345" HEIGHT="4065">
+      <TopMargin ID="TopMargin_1" HPOS="562" VPOS="240" WIDTH="1428" HEIGHT="59">
+        <TextBlock ID="TextBlock_1" HPOS="562" VPOS="240" WIDTH="1428" HEIGHT="59">
+          <TextLine ID="TextLine_1" HPOS="562" VPOS="240" WIDTH="1428" HEIGHT="59">
+            <String CONTENT="REGIMEN" WC="0.96" ID="String_1" HPOS="562" VPOS="240" WIDTH="296" HEIGHT="49" />
+            <String CONTENT="IN" WC="0.95" ID="String_2" HPOS="894" VPOS="240" WIDTH="67" HEIGHT="46" />
+            <String CONTENT="ACUTE" WC="0.96" ID="String_3" HPOS="996" VPOS="240" WIDTH="204" HEIGHT="48" />
+            <String CONTENT="DISEASES." WC="0.93" ID="String_4" HPOS="1237" VPOS="243" WIDTH="336" HEIGHT="49" />
+            <String CONTENT="~" WC="0.17" ID="String_5" HPOS="1634" VPOS="251" WIDTH="3" HEIGHT="2" />
+            <String CONTENT="301" WC="0.96" ID="String_6" HPOS="1901" VPOS="254" WIDTH="89" HEIGHT="45" />
+          </TextLine>
+        </TextBlock>
+      </TopMargin>
+      <PrintSpace ID="PrintSpace_322" HPOS="132" VPOS="240" WIDTH="1891" HEIGHT="3384">
+        <ComposedBlock ID="ComposedBlock_653c2c69-c053-40b9-90e6-50f9b2100886" HPOS="562" VPOS="240" WIDTH="1428" HEIGHT="59" />
+        <ComposedBlock ID="ComposedBlock_b65838cb-2934-464f-a87e-592443d27f8a" HPOS="132" VPOS="374" WIDTH="1891" HEIGHT="3250">
+          <TextBlock ID="TextBlock_b5ccf64e-534a-4432-b730-a15e2890a3e4" HPOS="132" VPOS="374" WIDTH="1873" HEIGHT="640">
+            <TextLine ID="TextLine_2" HPOS="132" VPOS="374" WIDTH="1864" HEIGHT="71">
+              <String CONTENT="am" WC="0.95" ID="String_7" HPOS="132" VPOS="400" WIDTH="83" HEIGHT="34" />
+              <String CONTENT="unable" WC="0.95" ID="String_8" HPOS="241" VPOS="378" WIDTH="193" HEIGHT="51" />
+              <String CONTENT="to" WC="0.96" ID="String_9" HPOS="461" VPOS="381" WIDTH="56" HEIGHT="46" />
+              <String CONTENT="mention" WC="0.95" ID="String_10" HPOS="545" VPOS="375" WIDTH="240" HEIGHT="51" />
+              <String CONTENT="any" WC="0.96" ID="String_11" HPOS="813" VPOS="392" WIDTH="103" HEIGHT="49" />
+              <String CONTENT="good" WC="0.96" ID="String_12" HPOS="946" VPOS="374" WIDTH="134" HEIGHT="66" />
+              <String CONTENT="quality" WC="0.96" ID="String_13" HPOS="1104" VPOS="376" WIDTH="199" HEIGHT="66" />
+              <String CONTENT="which" WC="0.96" ID="String_14" HPOS="1325" VPOS="377" WIDTH="170" HEIGHT="50" />
+              <String CONTENT="it" WC="0.96" ID="String_15" HPOS="1522" VPOS="379" WIDTH="43" HEIGHT="49" />
+              <String CONTENT="possesses" WC="0.96" ID="String_16" HPOS="1594" VPOS="384" WIDTH="255" HEIGHT="61" />
+              <String CONTENT="that" WC="0.96" ID="String_17" HPOS="1878" VPOS="384" WIDTH="118" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_3" HPOS="133" VPOS="456" WIDTH="1866" HEIGHT="72">
+              <String CONTENT="the" WC="0.96" ID="String_18" HPOS="133" VPOS="465" WIDTH="91" HEIGHT="48" />
+              <String CONTENT="other" WC="0.96" ID="String_19" HPOS="253" VPOS="461" WIDTH="149" HEIGHT="49" />
+              <String CONTENT="wants." WC="0.96" ID="String_20" HPOS="434" VPOS="462" WIDTH="177" HEIGHT="47" />
+              <String CONTENT="For" WC="0.96" ID="String_21" HPOS="669" VPOS="457" WIDTH="103" HEIGHT="49" />
+              <String CONTENT="it" WC="0.96" ID="String_22" HPOS="800" VPOS="456" WIDTH="42" HEIGHT="49" />
+              <String CONTENT="is" WC="0.96" ID="String_23" HPOS="874" VPOS="456" WIDTH="40" HEIGHT="48" />
+              <String CONTENT="not" WC="0.96" ID="String_24" HPOS="942" VPOS="460" WIDTH="96" HEIGHT="45" />
+              <String CONTENT="sweeter" WC="0.96" ID="String_25" HPOS="1068" VPOS="461" WIDTH="213" HEIGHT="45" />
+              <String CONTENT="than" WC="0.96" ID="String_26" HPOS="1307" VPOS="457" WIDTH="132" HEIGHT="49" />
+              <String CONTENT="the" WC="0.92" ID="String_27" HPOS="1468" VPOS="459" WIDTH="91" HEIGHT="49" />
+              <String CONTENT="unboiled," WC="0.92" ID="String_28" HPOS="1588" VPOS="461" WIDTH="264" HEIGHT="62" />
+              <String CONTENT="pro-" WC="0.91" ID="String_29" HPOS="1882" VPOS="481" WIDTH="117" HEIGHT="47" />
+            </TextLine>
+            <TextLine ID="TextLine_4" HPOS="134" VPOS="535" WIDTH="1867" HEIGHT="69">
+              <String CONTENT="vided" WC="0.96" ID="String_30" HPOS="134" VPOS="541" WIDTH="153" HEIGHT="53" />
+              <String CONTENT="the" WC="0.95" ID="String_31" HPOS="313" VPOS="541" WIDTH="91" HEIGHT="48" />
+              <String CONTENT="honey" WC="0.95" ID="String_32" HPOS="432" VPOS="539" WIDTH="174" HEIGHT="65" />
+              <String CONTENT="be" WC="0.96" ID="String_33" HPOS="634" VPOS="537" WIDTH="66" HEIGHT="49" />
+              <String CONTENT="fine," WC="0.96" ID="String_34" HPOS="733" VPOS="537" WIDTH="122" HEIGHT="61" />
+              <String CONTENT="and" WC="0.96" ID="String_35" HPOS="898" VPOS="535" WIDTH="106" HEIGHT="51" />
+              <String CONTENT="it" WC="0.96" ID="String_36" HPOS="1039" VPOS="536" WIDTH="42" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_37" HPOS="1119" VPOS="537" WIDTH="45" HEIGHT="48" />
+              <String CONTENT="weaker," WC="0.96" ID="String_38" HPOS="1197" VPOS="538" WIDTH="223" HEIGHT="63" />
+              <String CONTENT="and" WC="0.94" ID="String_39" HPOS="1464" VPOS="539" WIDTH="105" HEIGHT="49" />
+              <String CONTENT="occasions" WC="0.94" ID="String_40" HPOS="1603" VPOS="541" WIDTH="261" HEIGHT="50" />
+              <String CONTENT="less" WC="0.95" ID="String_41" HPOS="1901" VPOS="544" WIDTH="100" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_5" HPOS="136" VPOS="617" WIDTH="1865" HEIGHT="72">
+              <String CONTENT="copious" WC="0.96" ID="String_42" HPOS="136" VPOS="623" WIDTH="207" HEIGHT="66" />
+              <String CONTENT="evacuations" WC="0.96" ID="String_43" HPOS="382" VPOS="618" WIDTH="338" HEIGHT="64" />
+              <String CONTENT="of" WC="0.96" ID="String_44" HPOS="753" VPOS="617" WIDTH="60" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_45" HPOS="847" VPOS="617" WIDTH="91" HEIGHT="49" />
+              <String CONTENT="bowels," WC="0.96" ID="String_46" HPOS="967" VPOS="617" WIDTH="207" HEIGHT="64" />
+              <String CONTENT="neither" WC="0.96" ID="String_47" HPOS="1213" VPOS="618" WIDTH="208" HEIGHT="50" />
+              <String CONTENT="of" WC="0.96" ID="String_48" HPOS="1460" VPOS="620" WIDTH="59" HEIGHT="49" />
+              <String CONTENT="which" WC="0.96" ID="String_49" HPOS="1553" VPOS="620" WIDTH="171" HEIGHT="50" />
+              <String CONTENT="effects" WC="0.96" ID="String_50" HPOS="1753" VPOS="622" WIDTH="176" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_51" HPOS="1957" VPOS="625" WIDTH="44" HEIGHT="48" />
+            </TextLine>
+            <TextLine ID="TextLine_6" HPOS="136" VPOS="698" WIDTH="1866" HEIGHT="71">
+              <String CONTENT="required" WC="0.96" ID="String_52" HPOS="136" VPOS="701" WIDTH="241" HEIGHT="68" />
+              <String CONTENT="from" WC="0.96" ID="String_53" HPOS="412" VPOS="700" WIDTH="135" HEIGHT="50" />
+              <String CONTENT="the" WC="0.92" ID="String_54" HPOS="581" VPOS="699" WIDTH="91" HEIGHT="49" />
+              <String CONTENT="hydromel." WC="0.91" ID="String_55" HPOS="715" VPOS="698" WIDTH="291" HEIGHT="67" />
+              <String CONTENT="But" WC="0.89" ID="String_56" HPOS="1093" VPOS="699" WIDTH="108" HEIGHT="49" />
+              <String CONTENT="one" WC="0.96" ID="String_57" HPOS="1237" VPOS="717" WIDTH="99" HEIGHT="33" />
+              <String CONTENT="should" WC="0.95" ID="String_58" HPOS="1381" VPOS="700" WIDTH="187" HEIGHT="50" />
+              <String CONTENT="by" WC="0.95" ID="String_59" HPOS="1601" VPOS="701" WIDTH="71" HEIGHT="67" />
+              <String CONTENT="all" WC="0.94" ID="String_60" HPOS="1711" VPOS="702" WIDTH="68" HEIGHT="49" />
+              <String CONTENT="means" WC="0.94" ID="String_61" HPOS="1823" VPOS="720" WIDTH="179" HEIGHT="34" />
+            </TextLine>
+            <TextLine ID="TextLine_7" HPOS="136" VPOS="779" WIDTH="1868" HEIGHT="69">
+              <String CONTENT="use" WC="0.96" ID="String_62" HPOS="136" VPOS="802" WIDTH="91" HEIGHT="33" />
+              <String CONTENT="it" WC="0.95" ID="String_63" HPOS="255" VPOS="783" WIDTH="42" HEIGHT="49" />
+              <String CONTENT="boiled," WC="0.96" ID="String_64" HPOS="326" VPOS="781" WIDTH="188" HEIGHT="61" />
+              <String CONTENT="provided" WC="0.96" ID="String_65" HPOS="557" VPOS="779" WIDTH="252" HEIGHT="66" />
+              <String CONTENT="the" WC="0.96" ID="String_66" HPOS="844" VPOS="780" WIDTH="92" HEIGHT="48" />
+              <String CONTENT="honey" WC="0.96" ID="String_67" HPOS="970" VPOS="780" WIDTH="174" HEIGHT="66" />
+              <String CONTENT="be" WC="0.96" ID="String_68" HPOS="1172" VPOS="781" WIDTH="65" HEIGHT="49" />
+              <String CONTENT="bad," WC="0.96" ID="String_69" HPOS="1266" VPOS="780" WIDTH="118" HEIGHT="64" />
+              <String CONTENT="impure," WC="0.96" ID="String_70" HPOS="1428" VPOS="781" WIDTH="219" HEIGHT="67" />
+              <String CONTENT="black," WC="0.96" ID="String_71" HPOS="1683" VPOS="783" WIDTH="170" HEIGHT="63" />
+              <String CONTENT="and" WC="0.96" ID="String_72" HPOS="1900" VPOS="785" WIDTH="104" HEIGHT="49" />
+            </TextLine>
+            <TextLine ID="TextLine_8" HPOS="139" VPOS="860" WIDTH="1866" HEIGHT="68">
+              <String CONTENT="not" WC="0.96" ID="String_73" HPOS="139" VPOS="869" WIDTH="92" HEIGHT="48" />
+              <String CONTENT="fragrant," WC="0.96" ID="String_74" HPOS="257" VPOS="864" WIDTH="252" HEIGHT="64" />
+              <String CONTENT="for" WC="0.96" ID="String_75" HPOS="540" VPOS="861" WIDTH="80" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_76" HPOS="656" VPOS="861" WIDTH="91" HEIGHT="49" />
+              <String CONTENT="boiling" WC="0.96" ID="String_77" HPOS="781" VPOS="860" WIDTH="203" HEIGHT="67" />
+              <String CONTENT="will" WC="0.96" ID="String_78" HPOS="1021" VPOS="861" WIDTH="107" HEIGHT="50" />
+              <String CONTENT="remove" WC="0.96" ID="String_79" HPOS="1165" VPOS="879" WIDTH="208" HEIGHT="35" />
+              <String CONTENT="the" WC="0.96" ID="String_80" HPOS="1408" VPOS="863" WIDTH="93" HEIGHT="51" />
+              <String CONTENT="most" WC="0.95" ID="String_81" HPOS="1537" VPOS="870" WIDTH="136" HEIGHT="44" />
+              <String CONTENT="of" WC="0.95" ID="String_82" HPOS="1712" VPOS="865" WIDTH="59" HEIGHT="50" />
+              <String CONTENT="its" WC="0.96" ID="String_83" HPOS="1804" VPOS="865" WIDTH="69" HEIGHT="50" />
+              <String CONTENT="bad" WC="0.96" ID="String_84" HPOS="1901" VPOS="865" WIDTH="104" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_9" HPOS="140" VPOS="942" WIDTH="758" HEIGHT="72">
+              <String CONTENT="qualities" WC="0.96" ID="String_85" HPOS="140" VPOS="945" WIDTH="234" HEIGHT="69" />
+              <String CONTENT="and" WC="0.96" ID="String_86" HPOS="403" VPOS="942" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="appearances." WC="0.96" ID="String_87" HPOS="537" VPOS="959" WIDTH="361" HEIGHT="49" />
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="TextBlock_535ec872-a209-4ca5-a1dc-59d2e51a086a" HPOS="138" VPOS="993" WIDTH="1885" HEIGHT="2631">
+            <TextLine ID="TextLine_10" HPOS="220" VPOS="993" WIDTH="1786" HEIGHT="101">
+              <String CONTENT="16." WC="0.89" ID="String_88" HPOS="220" VPOS="1027" WIDTH="81" HEIGHT="48" />
+              <String CONTENT="You" WC="0.96" ID="String_89" HPOS="345" VPOS="1025" WIDTH="121" HEIGHT="49" />
+              <String CONTENT="will" WC="0.96" ID="String_90" HPOS="486" VPOS="1023" WIDTH="104" HEIGHT="51" />
+              <String CONTENT="find" WC="0.96" ID="String_91" HPOS="611" VPOS="1023" WIDTH="112" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_92" HPOS="749" VPOS="1023" WIDTH="92" HEIGHT="49" />
+              <String CONTENT="drink," WC="0.96" ID="String_93" HPOS="872" VPOS="1022" WIDTH="170" HEIGHT="63" />
+              <String CONTENT="called" WC="0.92" ID="String_94" HPOS="1074" VPOS="1024" WIDTH="165" HEIGHT="50" />
+              <String CONTENT="oxymel," WC="0.91" ID="String_95" HPOS="1268" VPOS="1026" WIDTH="221" HEIGHT="66" />
+              <String CONTENT="often" WC="0.96" ID="String_96" HPOS="1520" VPOS="1025" WIDTH="146" HEIGHT="52" />
+              <String CONTENT="very" WC="0.96" ID="String_97" HPOS="1694" VPOS="1044" WIDTH="123" HEIGHT="50" />
+              <String CONTENT="useful" WC="0.95" ID="String_98" HPOS="1822" VPOS="993" WIDTH="184" HEIGHT="86" />
+            </TextLine>
+            <TextLine ID="TextLine_11" HPOS="139" VPOS="1104" WIDTH="1873" HEIGHT="68">
+              <String CONTENT="in" WC="0.96" ID="String_99" HPOS="139" VPOS="1110" WIDTH="57" HEIGHT="49" />
+              <String CONTENT="these" WC="0.96" ID="String_100" HPOS="212" VPOS="1107" WIDTH="148" HEIGHT="50" />
+              <String CONTENT="complaints," WC="0.96" ID="String_101" HPOS="383" VPOS="1104" WIDTH="324" HEIGHT="67" />
+              <String CONTENT="for" WC="0.96" ID="String_102" HPOS="728" VPOS="1104" WIDTH="79" HEIGHT="50" />
+              <String CONTENT="it" WC="0.96" ID="String_103" HPOS="823" VPOS="1104" WIDTH="44" HEIGHT="50" />
+              <String CONTENT="promotes" WC="0.96" ID="String_104" HPOS="889" VPOS="1109" WIDTH="263" HEIGHT="61" />
+              <String CONTENT="expectoration" WC="0.96" ID="String_105" HPOS="1171" VPOS="1107" WIDTH="389" HEIGHT="65" />
+              <String CONTENT="and" WC="0.96" ID="String_106" HPOS="1579" VPOS="1109" WIDTH="105" HEIGHT="49" />
+              <String CONTENT="freedom" WC="0.95" ID="String_107" HPOS="1704" VPOS="1108" WIDTH="231" HEIGHT="51" />
+              <String CONTENT="of" WC="0.96" ID="String_108" HPOS="1955" VPOS="1110" WIDTH="57" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_12" HPOS="140" VPOS="1185" WIDTH="1865" HEIGHT="68">
+              <String CONTENT="breathing." WC="0.95" ID="String_109" HPOS="140" VPOS="1187" WIDTH="291" HEIGHT="66" />
+              <String CONTENT="The" WC="0.79" ID="String_110" HPOS="518" VPOS="1186" WIDTH="111" HEIGHT="49" />
+              <String CONTENT="following" WC="0.52" ID="String_111" HPOS="657" VPOS="1185" WIDTH="269" HEIGHT="67" />
+              <String CONTENT="are" WC="0.96" ID="String_112" HPOS="963" VPOS="1203" WIDTH="87" HEIGHT="33" />
+              <String CONTENT="the" WC="0.96" ID="String_113" HPOS="1079" VPOS="1187" WIDTH="91" HEIGHT="49" />
+              <String CONTENT="proper" WC="0.96" ID="String_114" HPOS="1212" VPOS="1205" WIDTH="186" HEIGHT="48" />
+              <String CONTENT="occasions" WC="0.96" ID="String_115" HPOS="1427" VPOS="1190" WIDTH="264" HEIGHT="50" />
+              <String CONTENT="for" WC="0.92" ID="String_116" HPOS="1732" VPOS="1190" WIDTH="82" HEIGHT="50" />
+              <String CONTENT="admi-" WC="0.92" ID="String_117" HPOS="1842" VPOS="1191" WIDTH="163" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_13" HPOS="138" VPOS="1266" WIDTH="1870" HEIGHT="72">
+              <String CONTENT="nistering" WC="0.92" ID="String_118" HPOS="138" VPOS="1269" WIDTH="255" HEIGHT="65" />
+              <String CONTENT="it." WC="0.96" ID="String_119" HPOS="420" VPOS="1267" WIDTH="60" HEIGHT="50" />
+              <String CONTENT="When" WC="0.95" ID="String_120" HPOS="565" VPOS="1266" WIDTH="179" HEIGHT="51" />
+              <String CONTENT="strongly" WC="0.95" ID="String_121" HPOS="774" VPOS="1267" WIDTH="237" HEIGHT="67" />
+              <String CONTENT="acid" WC="0.96" ID="String_122" HPOS="1040" VPOS="1268" WIDTH="113" HEIGHT="49" />
+              <String CONTENT="it" WC="0.96" ID="String_123" HPOS="1181" VPOS="1268" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="has" WC="0.96" ID="String_124" HPOS="1251" VPOS="1269" WIDTH="94" HEIGHT="49" />
+              <String CONTENT="no" WC="0.95" ID="String_125" HPOS="1374" VPOS="1287" WIDTH="69" HEIGHT="33" />
+              <String CONTENT="mean" WC="0.95" ID="String_126" HPOS="1471" VPOS="1288" WIDTH="155" HEIGHT="32" />
+              <String CONTENT="operation" WC="0.95" ID="String_127" HPOS="1656" VPOS="1272" WIDTH="267" HEIGHT="66" />
+              <String CONTENT="in" WC="0.96" ID="String_128" HPOS="1950" VPOS="1273" WIDTH="58" HEIGHT="49" />
+            </TextLine>
+            <TextLine ID="TextLine_14" HPOS="138" VPOS="1348" WIDTH="1870" HEIGHT="71">
+              <String CONTENT="rendering" WC="0.96" ID="String_129" HPOS="138" VPOS="1350" WIDTH="281" HEIGHT="65" />
+              <String CONTENT="the" WC="0.96" ID="String_130" HPOS="445" VPOS="1348" WIDTH="91" HEIGHT="50" />
+              <String CONTENT="expectoration" WC="0.96" ID="String_131" HPOS="566" VPOS="1348" WIDTH="389" HEIGHT="66" />
+              <String CONTENT="more" WC="0.96" ID="String_132" HPOS="988" VPOS="1366" WIDTH="145" HEIGHT="32" />
+              <String CONTENT="easy," WC="0.96" ID="String_133" HPOS="1162" VPOS="1366" WIDTH="138" HEIGHT="50" />
+              <String CONTENT="for" WC="0.96" ID="String_134" HPOS="1339" VPOS="1350" WIDTH="80" HEIGHT="49" />
+              <String CONTENT="by" WC="0.96" ID="String_135" HPOS="1445" VPOS="1350" WIDTH="71" HEIGHT="67" />
+              <String CONTENT="bringing" WC="0.96" ID="String_136" HPOS="1537" VPOS="1351" WIDTH="251" HEIGHT="68" />
+              <String CONTENT="up" WC="0.96" ID="String_137" HPOS="1815" VPOS="1371" WIDTH="71" HEIGHT="48" />
+              <String CONTENT="the" WC="0.96" ID="String_138" HPOS="1915" VPOS="1354" WIDTH="93" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_15" HPOS="140" VPOS="1429" WIDTH="1868" HEIGHT="71">
+              <String CONTENT="sputa," WC="0.92" ID="String_139" HPOS="140" VPOS="1438" WIDTH="165" HEIGHT="62" />
+              <String CONTENT="which" WC="0.96" ID="String_140" HPOS="357" VPOS="1430" WIDTH="168" HEIGHT="51" />
+              <String CONTENT="occasion" WC="0.95" ID="String_141" HPOS="574" VPOS="1430" WIDTH="240" HEIGHT="50" />
+              <String CONTENT="troublesome" WC="0.95" ID="String_142" HPOS="849" VPOS="1429" WIDTH="353" HEIGHT="51" />
+              <String CONTENT="hawking," WC="0.96" ID="String_143" HPOS="1249" VPOS="1431" WIDTH="264" HEIGHT="67" />
+              <String CONTENT="and" WC="0.93" ID="String_144" HPOS="1571" VPOS="1433" WIDTH="105" HEIGHT="49" />
+              <String CONTENT="rendering" WC="0.93" ID="String_145" HPOS="1724" VPOS="1434" WIDTH="284" HEIGHT="66" />
+            </TextLine>
+            <TextLine ID="TextLine_16" HPOS="139" VPOS="1511" WIDTH="1871" HEIGHT="69">
+              <String CONTENT="them" WC="0.96" ID="String_146" HPOS="139" VPOS="1516" WIDTH="145" HEIGHT="50" />
+              <String CONTENT="more" WC="0.96" ID="String_147" HPOS="311" VPOS="1529" WIDTH="144" HEIGHT="33" />
+              <String CONTENT="slippery," WC="0.96" ID="String_148" HPOS="485" VPOS="1511" WIDTH="241" HEIGHT="67" />
+              <String CONTENT="and," WC="0.96" ID="String_149" HPOS="749" VPOS="1511" WIDTH="119" HEIGHT="63" />
+              <String CONTENT="as" WC="0.96" ID="String_150" HPOS="894" VPOS="1528" WIDTH="54" HEIGHT="32" />
+              <String CONTENT="it" WC="0.96" ID="String_151" HPOS="970" VPOS="1511" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="were," WC="0.96" ID="String_152" HPOS="1031" VPOS="1528" WIDTH="151" HEIGHT="46" />
+              <String CONTENT="clearing" WC="0.95" ID="String_153" HPOS="1214" VPOS="1512" WIDTH="233" HEIGHT="66" />
+              <String CONTENT="the" WC="0.93" ID="String_154" HPOS="1474" VPOS="1513" WIDTH="91" HEIGHT="50" />
+              <String CONTENT="windpipe" WC="0.91" ID="String_155" HPOS="1594" VPOS="1514" WIDTH="260" HEIGHT="66" />
+              <String CONTENT="with" WC="0.96" ID="String_156" HPOS="1882" VPOS="1516" WIDTH="128" HEIGHT="49" />
+            </TextLine>
+            <TextLine ID="TextLine_17" HPOS="142" VPOS="1593" WIDTH="1864" HEIGHT="67">
+              <String CONTENT="a" WC="0.96" ID="String_157" HPOS="142" VPOS="1614" WIDTH="31" HEIGHT="33" />
+              <String CONTENT="feather," WC="0.95" ID="String_158" HPOS="200" VPOS="1594" WIDTH="214" HEIGHT="63" />
+              <String CONTENT="it" WC="0.96" ID="String_159" HPOS="453" VPOS="1593" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="relieves" WC="0.96" ID="String_160" HPOS="524" VPOS="1593" WIDTH="215" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_161" HPOS="767" VPOS="1593" WIDTH="92" HEIGHT="50" />
+              <String CONTENT="lungs" WC="0.96" ID="String_162" HPOS="887" VPOS="1593" WIDTH="158" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_163" HPOS="1075" VPOS="1593" WIDTH="105" HEIGHT="49" />
+              <String CONTENT="proves" WC="0.96" ID="String_164" HPOS="1215" VPOS="1611" WIDTH="182" HEIGHT="48" />
+              <String CONTENT="emollient" WC="0.95" ID="String_165" HPOS="1427" VPOS="1594" WIDTH="269" HEIGHT="51" />
+              <String CONTENT="to" WC="0.96" ID="String_166" HPOS="1737" VPOS="1600" WIDTH="56" HEIGHT="45" />
+              <String CONTENT="them;" WC="0.92" ID="String_167" HPOS="1828" VPOS="1596" WIDTH="178" HEIGHT="64" />
+            </TextLine>
+            <TextLine ID="TextLine_18" HPOS="142" VPOS="1674" WIDTH="1869" HEIGHT="67">
+              <String CONTENT="and" WC="0.95" ID="String_168" HPOS="142" VPOS="1677" WIDTH="103" HEIGHT="52" />
+              <String CONTENT="when" WC="0.95" ID="String_169" HPOS="277" VPOS="1676" WIDTH="153" HEIGHT="51" />
+              <String CONTENT="it" WC="0.96" ID="String_170" HPOS="465" VPOS="1674" WIDTH="44" HEIGHT="51" />
+              <String CONTENT="succeeds" WC="0.96" ID="String_171" HPOS="556" VPOS="1674" WIDTH="243" HEIGHT="51" />
+              <String CONTENT="in" WC="0.96" ID="String_172" HPOS="837" VPOS="1674" WIDTH="58" HEIGHT="50" />
+              <String CONTENT="producing" WC="0.96" ID="String_173" HPOS="937" VPOS="1674" WIDTH="294" HEIGHT="67" />
+              <String CONTENT="these" WC="0.96" ID="String_174" HPOS="1268" VPOS="1675" WIDTH="149" HEIGHT="51" />
+              <String CONTENT="effects" WC="0.96" ID="String_175" HPOS="1463" VPOS="1676" WIDTH="177" HEIGHT="51" />
+              <String CONTENT="it" WC="0.96" ID="String_176" HPOS="1683" VPOS="1677" WIDTH="42" HEIGHT="50" />
+              <String CONTENT="must" WC="0.96" ID="String_177" HPOS="1763" VPOS="1684" WIDTH="142" HEIGHT="43" />
+              <String CONTENT="do" WC="0.96" ID="String_178" HPOS="1945" VPOS="1678" WIDTH="66" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_19" HPOS="140" VPOS="1756" WIDTH="1872" HEIGHT="72">
+              <String CONTENT="much" WC="0.96" ID="String_179" HPOS="140" VPOS="1758" WIDTH="159" HEIGHT="52" />
+              <String CONTENT="good." WC="0.96" ID="String_180" HPOS="329" VPOS="1756" WIDTH="150" HEIGHT="67" />
+              <String CONTENT="But" WC="0.55" ID="String_181" HPOS="565" VPOS="1757" WIDTH="110" HEIGHT="50" />
+              <String CONTENT="there" WC="0.96" ID="String_182" HPOS="703" VPOS="1756" WIDTH="151" HEIGHT="50" />
+              <String CONTENT="are" WC="0.96" ID="String_183" HPOS="884" VPOS="1773" WIDTH="86" HEIGHT="33" />
+              <String CONTENT="cases" WC="0.96" ID="String_184" HPOS="1000" VPOS="1773" WIDTH="140" HEIGHT="34" />
+              <String CONTENT="in" WC="0.96" ID="String_185" HPOS="1167" VPOS="1757" WIDTH="58" HEIGHT="49" />
+              <String CONTENT="which" WC="0.93" ID="String_186" HPOS="1254" VPOS="1757" WIDTH="171" HEIGHT="51" />
+              <String CONTENT="hydromel," WC="0.87" ID="String_187" HPOS="1452" VPOS="1758" WIDTH="289" HEIGHT="67" />
+              <String CONTENT="strongly" WC="0.96" ID="String_188" HPOS="1775" VPOS="1760" WIDTH="237" HEIGHT="68" />
+            </TextLine>
+            <TextLine ID="TextLine_20" HPOS="142" VPOS="1838" WIDTH="1871" HEIGHT="67">
+              <String CONTENT="acid," WC="0.96" ID="String_189" HPOS="142" VPOS="1840" WIDTH="128" HEIGHT="62" />
+              <String CONTENT="does" WC="0.96" ID="String_190" HPOS="303" VPOS="1839" WIDTH="123" HEIGHT="50" />
+              <String CONTENT="not" WC="0.96" ID="String_191" HPOS="454" VPOS="1842" WIDTH="96" HEIGHT="46" />
+              <String CONTENT="promote" WC="0.96" ID="String_192" HPOS="579" VPOS="1843" WIDTH="235" HEIGHT="62" />
+              <String CONTENT="expectoration," WC="0.96" ID="String_193" HPOS="838" VPOS="1838" WIDTH="402" HEIGHT="66" />
+              <String CONTENT="but" WC="0.96" ID="String_194" HPOS="1269" VPOS="1839" WIDTH="98" HEIGHT="50" />
+              <String CONTENT="renders" WC="0.96" ID="String_195" HPOS="1389" VPOS="1840" WIDTH="213" HEIGHT="50" />
+              <String CONTENT="it" WC="0.96" ID="String_196" HPOS="1624" VPOS="1841" WIDTH="42" HEIGHT="49" />
+              <String CONTENT="more" WC="0.96" ID="String_197" HPOS="1685" VPOS="1858" WIDTH="144" HEIGHT="32" />
+              <String CONTENT="viscid" WC="0.96" ID="String_198" HPOS="1850" VPOS="1841" WIDTH="163" HEIGHT="52" />
+            </TextLine>
+            <TextLine ID="TextLine_21" HPOS="142" VPOS="1919" WIDTH="1870" HEIGHT="68">
+              <String CONTENT="and" WC="0.94" ID="String_199" HPOS="142" VPOS="1921" WIDTH="103" HEIGHT="52" />
+              <String CONTENT="thus" WC="0.94" ID="String_200" HPOS="272" VPOS="1921" WIDTH="124" HEIGHT="58" />
+              <String CONTENT="does" WC="0.96" ID="String_201" HPOS="428" VPOS="1920" WIDTH="122" HEIGHT="51" />
+              <String CONTENT="harm," WC="0.96" ID="String_202" HPOS="578" VPOS="1920" WIDTH="167" HEIGHT="62" />
+              <String CONTENT="and" WC="0.94" ID="String_203" HPOS="792" VPOS="1919" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="it" WC="0.94" ID="String_204" HPOS="935" VPOS="1920" WIDTH="42" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_205" HPOS="1010" VPOS="1920" WIDTH="44" HEIGHT="50" />
+              <String CONTENT="most" WC="0.96" ID="String_206" HPOS="1082" VPOS="1925" WIDTH="138" HEIGHT="45" />
+              <String CONTENT="apt" WC="0.96" ID="String_207" HPOS="1251" VPOS="1925" WIDTH="87" HEIGHT="61" />
+              <String CONTENT="to" WC="0.96" ID="String_208" HPOS="1366" VPOS="1925" WIDTH="56" HEIGHT="46" />
+              <String CONTENT="produce" WC="0.96" ID="String_209" HPOS="1460" VPOS="1922" WIDTH="226" HEIGHT="65" />
+              <String CONTENT="these" WC="0.96" ID="String_210" HPOS="1722" VPOS="1923" WIDTH="149" HEIGHT="49" />
+              <String CONTENT="bad" WC="0.96" ID="String_211" HPOS="1907" VPOS="1923" WIDTH="105" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_22" HPOS="143" VPOS="2001" WIDTH="1869" HEIGHT="65">
+              <String CONTENT="effects" WC="0.96" ID="String_212" HPOS="143" VPOS="2003" WIDTH="176" HEIGHT="51" />
+              <String CONTENT="in" WC="0.96" ID="String_213" HPOS="347" VPOS="2003" WIDTH="59" HEIGHT="48" />
+              <String CONTENT="cases" WC="0.96" ID="String_214" HPOS="449" VPOS="2018" WIDTH="142" HEIGHT="34" />
+              <String CONTENT="which" WC="0.96" ID="String_215" HPOS="620" VPOS="2001" WIDTH="172" HEIGHT="51" />
+              <String CONTENT="are" WC="0.95" ID="String_216" HPOS="822" VPOS="2018" WIDTH="86" HEIGHT="33" />
+              <String CONTENT="otherwise" WC="0.95" ID="String_217" HPOS="938" VPOS="2001" WIDTH="272" HEIGHT="51" />
+              <String CONTENT="of" WC="0.96" ID="String_218" HPOS="1240" VPOS="2002" WIDTH="59" HEIGHT="50" />
+              <String CONTENT="a" WC="0.96" ID="String_219" HPOS="1331" VPOS="2020" WIDTH="29" HEIGHT="32" />
+              <String CONTENT="fatal" WC="0.96" ID="String_220" HPOS="1388" VPOS="2002" WIDTH="130" HEIGHT="51" />
+              <String CONTENT="character," WC="0.96" ID="String_221" HPOS="1546" VPOS="2003" WIDTH="283" HEIGHT="63" />
+              <String CONTENT="when" WC="0.96" ID="String_222" HPOS="1858" VPOS="2005" WIDTH="154" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_23" HPOS="141" VPOS="2083" WIDTH="1872" HEIGHT="68">
+              <String CONTENT="the" WC="0.96" ID="String_223" HPOS="141" VPOS="2086" WIDTH="91" HEIGHT="50" />
+              <String CONTENT="patient" WC="0.96" ID="String_224" HPOS="259" VPOS="2084" WIDTH="205" HEIGHT="67" />
+              <String CONTENT="is" WC="0.96" ID="String_225" HPOS="492" VPOS="2084" WIDTH="42" HEIGHT="49" />
+              <String CONTENT="unable" WC="0.96" ID="String_226" HPOS="563" VPOS="2083" WIDTH="194" HEIGHT="51" />
+              <String CONTENT="to" WC="0.96" ID="String_227" HPOS="785" VPOS="2088" WIDTH="55" HEIGHT="45" />
+              <String CONTENT="cough" WC="0.96" ID="String_228" HPOS="870" VPOS="2083" WIDTH="172" HEIGHT="66" />
+              <String CONTENT="or" WC="0.96" ID="String_229" HPOS="1072" VPOS="2101" WIDTH="57" HEIGHT="32" />
+              <String CONTENT="bring" WC="0.96" ID="String_230" HPOS="1155" VPOS="2083" WIDTH="158" HEIGHT="67" />
+              <String CONTENT="up" WC="0.96" ID="String_231" HPOS="1340" VPOS="2102" WIDTH="70" HEIGHT="48" />
+              <String CONTENT="the" WC="0.93" ID="String_232" HPOS="1441" VPOS="2086" WIDTH="91" HEIGHT="48" />
+              <String CONTENT="sputa." WC="0.9" ID="String_233" HPOS="1562" VPOS="2091" WIDTH="166" HEIGHT="60" />
+              <String CONTENT="On" WC="0.96" ID="String_234" HPOS="1803" VPOS="2086" WIDTH="83" HEIGHT="48" />
+              <String CONTENT="this" WC="0.96" ID="String_235" HPOS="1907" VPOS="2087" WIDTH="106" HEIGHT="49" />
+            </TextLine>
+            <TextLine ID="TextLine_24" HPOS="145" VPOS="2165" WIDTH="1874" HEIGHT="68">
+              <String CONTENT="account," WC="0.96" ID="String_236" HPOS="145" VPOS="2170" WIDTH="238" HEIGHT="58" />
+              <String CONTENT="then," WC="0.96" ID="String_237" HPOS="412" VPOS="2166" WIDTH="147" HEIGHT="63" />
+              <String CONTENT="one" WC="0.96" ID="String_238" HPOS="592" VPOS="2182" WIDTH="100" HEIGHT="33" />
+              <String CONTENT="ought" WC="0.96" ID="String_239" HPOS="723" VPOS="2165" WIDTH="165" HEIGHT="65" />
+              <String CONTENT="to" WC="0.96" ID="String_240" HPOS="918" VPOS="2170" WIDTH="54" HEIGHT="45" />
+              <String CONTENT="consider" WC="0.96" ID="String_241" HPOS="991" VPOS="2165" WIDTH="236" HEIGHT="51" />
+              <String CONTENT="beforehand" WC="0.96" ID="String_242" HPOS="1247" VPOS="2165" WIDTH="322" HEIGHT="51" />
+              <String CONTENT="the" WC="0.96" ID="String_243" HPOS="1590" VPOS="2167" WIDTH="92" HEIGHT="50" />
+              <String CONTENT="strength" WC="0.96" ID="String_244" HPOS="1702" VPOS="2168" WIDTH="240" HEIGHT="65" />
+              <String CONTENT="of" WC="0.96" ID="String_245" HPOS="1961" VPOS="2168" WIDTH="58" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_25" HPOS="142" VPOS="2246" WIDTH="1869" HEIGHT="69">
+              <String CONTENT="the" WC="0.96" ID="String_246" HPOS="142" VPOS="2249" WIDTH="90" HEIGHT="50" />
+              <String CONTENT="patient," WC="0.96" ID="String_247" HPOS="259" VPOS="2248" WIDTH="221" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_248" HPOS="526" VPOS="2247" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="if" WC="0.96" ID="String_249" HPOS="667" VPOS="2247" WIDTH="48" HEIGHT="49" />
+              <String CONTENT="there" WC="0.96" ID="String_250" HPOS="744" VPOS="2247" WIDTH="150" HEIGHT="49" />
+              <String CONTENT="be" WC="0.96" ID="String_251" HPOS="927" VPOS="2246" WIDTH="66" HEIGHT="51" />
+              <String CONTENT="any" WC="0.96" ID="String_252" HPOS="1023" VPOS="2265" WIDTH="102" HEIGHT="49" />
+              <String CONTENT="hope," WC="0.96" ID="String_253" HPOS="1153" VPOS="2248" WIDTH="149" HEIGHT="65" />
+              <String CONTENT="then" WC="0.96" ID="String_254" HPOS="1348" VPOS="2248" WIDTH="131" HEIGHT="50" />
+              <String CONTENT="one" WC="0.96" ID="String_255" HPOS="1509" VPOS="2265" WIDTH="98" HEIGHT="34" />
+              <String CONTENT="may" WC="0.96" ID="String_256" HPOS="1650" VPOS="2266" WIDTH="121" HEIGHT="49" />
+              <String CONTENT="give" WC="0.96" ID="String_257" HPOS="1801" VPOS="2249" WIDTH="115" HEIGHT="65" />
+              <String CONTENT="it," WC="0.96" ID="String_258" HPOS="1952" VPOS="2250" WIDTH="59" HEIGHT="63" />
+            </TextLine>
+            <TextLine ID="TextLine_26" HPOS="142" VPOS="2328" WIDTH="1873" HEIGHT="68">
+              <String CONTENT="but" WC="0.96" ID="String_259" HPOS="142" VPOS="2331" WIDTH="97" HEIGHT="50" />
+              <String CONTENT="if" WC="0.95" ID="String_260" HPOS="279" VPOS="2330" WIDTH="48" HEIGHT="49" />
+              <String CONTENT="given" WC="0.94" ID="String_261" HPOS="358" VPOS="2329" WIDTH="156" HEIGHT="67" />
+              <String CONTENT="at" WC="0.94" ID="String_262" HPOS="543" VPOS="2333" WIDTH="53" HEIGHT="46" />
+              <String CONTENT="all" WC="0.94" ID="String_263" HPOS="626" VPOS="2328" WIDTH="70" HEIGHT="51" />
+              <String CONTENT="in" WC="0.94" ID="String_264" HPOS="721" VPOS="2328" WIDTH="58" HEIGHT="50" />
+              <String CONTENT="such" WC="0.96" ID="String_265" HPOS="809" VPOS="2328" WIDTH="128" HEIGHT="50" />
+              <String CONTENT="cases" WC="0.95" ID="String_266" HPOS="966" VPOS="2345" WIDTH="140" HEIGHT="34" />
+              <String CONTENT="it" WC="0.96" ID="String_267" HPOS="1141" VPOS="2328" WIDTH="43" HEIGHT="51" />
+              <String CONTENT="should" WC="0.95" ID="String_268" HPOS="1214" VPOS="2329" WIDTH="188" HEIGHT="51" />
+              <String CONTENT="be" WC="0.96" ID="String_269" HPOS="1436" VPOS="2330" WIDTH="65" HEIGHT="50" />
+              <String CONTENT="quite" WC="0.96" ID="String_270" HPOS="1532" VPOS="2331" WIDTH="142" HEIGHT="65" />
+              <String CONTENT="tepid," WC="0.96" ID="String_271" HPOS="1702" VPOS="2330" WIDTH="162" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_272" HPOS="1910" VPOS="2332" WIDTH="105" HEIGHT="49" />
+            </TextLine>
+            <TextLine ID="TextLine_27" HPOS="143" VPOS="2410" WIDTH="1871" HEIGHT="69">
+              <String CONTENT="in" WC="0.96" ID="String_273" HPOS="143" VPOS="2413" WIDTH="57" HEIGHT="50" />
+              <String CONTENT="by" WC="0.96" ID="String_274" HPOS="236" VPOS="2412" WIDTH="73" HEIGHT="67" />
+              <String CONTENT="no" WC="0.95" ID="String_275" HPOS="335" VPOS="2429" WIDTH="72" HEIGHT="33" />
+              <String CONTENT="means" WC="0.95" ID="String_276" HPOS="444" VPOS="2427" WIDTH="181" HEIGHT="34" />
+              <String CONTENT="large" WC="0.96" ID="String_277" HPOS="646" VPOS="2410" WIDTH="145" HEIGHT="66" />
+              <String CONTENT="doses." WC="0.95" ID="String_278" HPOS="814" VPOS="2410" WIDTH="163" HEIGHT="51" />
+              <String CONTENT="But" WC="0.75" ID="String_279" HPOS="1063" VPOS="2411" WIDTH="110" HEIGHT="50" />
+              <String CONTENT="if" WC="0.96" ID="String_280" HPOS="1206" VPOS="2411" WIDTH="47" HEIGHT="50" />
+              <String CONTENT="slightly" WC="0.96" ID="String_281" HPOS="1290" VPOS="2411" WIDTH="216" HEIGHT="68" />
+              <String CONTENT="acrid" WC="0.93" ID="String_282" HPOS="1536" VPOS="2412" WIDTH="141" HEIGHT="50" />
+              <String CONTENT="it" WC="0.93" ID="String_283" HPOS="1697" VPOS="2412" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="moistens" WC="0.92" ID="String_284" HPOS="1762" VPOS="2412" WIDTH="252" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_28" HPOS="143" VPOS="2492" WIDTH="1874" HEIGHT="68">
+              <String CONTENT="the" WC="0.96" ID="String_285" HPOS="143" VPOS="2494" WIDTH="92" HEIGHT="51" />
+              <String CONTENT="mouth" WC="0.96" ID="String_286" HPOS="271" VPOS="2492" WIDTH="188" HEIGHT="52" />
+              <String CONTENT="and" WC="0.96" ID="String_287" HPOS="486" VPOS="2492" WIDTH="106" HEIGHT="51" />
+              <String CONTENT="throat," WC="0.96" ID="String_288" HPOS="627" VPOS="2492" WIDTH="193" HEIGHT="63" />
+              <String CONTENT="promotes" WC="0.96" ID="String_289" HPOS="863" VPOS="2496" WIDTH="264" HEIGHT="62" />
+              <String CONTENT="expectoration," WC="0.96" ID="String_290" HPOS="1158" VPOS="2493" WIDTH="405" HEIGHT="65" />
+              <String CONTENT="and" WC="0.93" ID="String_291" HPOS="1609" VPOS="2493" WIDTH="104" HEIGHT="51" />
+              <String CONTENT="quenches" WC="0.91" ID="String_292" HPOS="1753" VPOS="2495" WIDTH="264" HEIGHT="65" />
+            </TextLine>
+            <TextLine ID="TextLine_29" HPOS="143" VPOS="2573" WIDTH="1872" HEIGHT="69">
+              <String CONTENT="thirst" WC="0.83" ID="String_293" HPOS="143" VPOS="2576" WIDTH="156" HEIGHT="51" />
+              <String CONTENT=";" WC="0.83" ID="String_294" HPOS="327" VPOS="2596" WIDTH="4" HEIGHT="42" />
+              <String CONTENT="agrees" WC="0.96" ID="String_295" HPOS="377" VPOS="2578" WIDTH="178" HEIGHT="63" />
+              <String CONTENT="with" WC="0.96" ID="String_296" HPOS="590" VPOS="2573" WIDTH="125" HEIGHT="53" />
+              <String CONTENT="the" WC="0.96" ID="String_297" HPOS="754" VPOS="2573" WIDTH="91" HEIGHT="51" />
+              <String CONTENT="viscera" WC="0.96" ID="String_298" HPOS="879" VPOS="2573" WIDTH="197" HEIGHT="52" />
+              <String CONTENT="seated" WC="0.96" ID="String_299" HPOS="1113" VPOS="2574" WIDTH="178" HEIGHT="51" />
+              <String CONTENT="in" WC="0.95" ID="String_300" HPOS="1322" VPOS="2574" WIDTH="57" HEIGHT="51" />
+              <String CONTENT="the" WC="0.93" ID="String_301" HPOS="1412" VPOS="2574" WIDTH="91" HEIGHT="51" />
+              <String CONTENT="hypochondrium," WC="0.92" ID="String_302" HPOS="1545" VPOS="2575" WIDTH="470" HEIGHT="67" />
+            </TextLine>
+            <TextLine ID="TextLine_30" HPOS="146" VPOS="2655" WIDTH="1873" HEIGHT="71">
+              <String CONTENT="and" WC="0.95" ID="String_303" HPOS="146" VPOS="2658" WIDTH="105" HEIGHT="50" />
+              <String CONTENT="obviates" WC="0.95" ID="String_304" HPOS="269" VPOS="2656" WIDTH="229" HEIGHT="52" />
+              <String CONTENT="the" WC="0.96" ID="String_305" HPOS="520" VPOS="2656" WIDTH="93" HEIGHT="51" />
+              <String CONTENT="bad" WC="0.96" ID="String_306" HPOS="629" VPOS="2655" WIDTH="106" HEIGHT="51" />
+              <String CONTENT="effects" WC="0.96" ID="String_307" HPOS="757" VPOS="2655" WIDTH="179" HEIGHT="51" />
+              <String CONTENT="of" WC="0.96" ID="String_308" HPOS="959" VPOS="2655" WIDTH="59" HEIGHT="52" />
+              <String CONTENT="the" WC="0.96" ID="String_309" HPOS="1040" VPOS="2656" WIDTH="92" HEIGHT="50" />
+              <String CONTENT="honey" WC="0.93" ID="String_310" HPOS="1150" VPOS="2656" WIDTH="176" HEIGHT="68" />
+              <String CONTENT=";" WC="0.92" ID="String_311" HPOS="1344" VPOS="2678" WIDTH="14" HEIGHT="41" />
+              <String CONTENT="for" WC="0.96" ID="String_312" HPOS="1388" VPOS="2655" WIDTH="81" HEIGHT="51" />
+              <String CONTENT="the" WC="0.93" ID="String_313" HPOS="1489" VPOS="2656" WIDTH="92" HEIGHT="51" />
+              <String CONTENT="bilious" WC="0.93" ID="String_314" HPOS="1603" VPOS="2657" WIDTH="189" HEIGHT="51" />
+              <String CONTENT="quality" WC="0.96" ID="String_315" HPOS="1818" VPOS="2658" WIDTH="201" HEIGHT="68" />
+            </TextLine>
+            <TextLine ID="TextLine_31" HPOS="147" VPOS="2737" WIDTH="1872" HEIGHT="68">
+              <String CONTENT="of" WC="0.96" ID="String_316" HPOS="147" VPOS="2740" WIDTH="59" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_317" HPOS="239" VPOS="2739" WIDTH="92" HEIGHT="51" />
+              <String CONTENT="honey" WC="0.96" ID="String_318" HPOS="358" VPOS="2738" WIDTH="177" HEIGHT="67" />
+              <String CONTENT="is" WC="0.96" ID="String_319" HPOS="562" VPOS="2738" WIDTH="44" HEIGHT="50" />
+              <String CONTENT="thereby" WC="0.96" ID="String_320" HPOS="634" VPOS="2737" WIDTH="222" HEIGHT="67" />
+              <String CONTENT="corrected." WC="0.95" ID="String_321" HPOS="885" VPOS="2738" WIDTH="281" HEIGHT="51" />
+              <String CONTENT="It" WC="0.95" ID="String_322" HPOS="1254" VPOS="2738" WIDTH="54" HEIGHT="51" />
+              <String CONTENT="also" WC="0.96" ID="String_323" HPOS="1338" VPOS="2739" WIDTH="107" HEIGHT="50" />
+              <String CONTENT="promotes" WC="0.92" ID="String_324" HPOS="1473" VPOS="2744" WIDTH="262" HEIGHT="61" />
+              <String CONTENT="flatulent" WC="0.7" ID="String_325" HPOS="1777" VPOS="2740" WIDTH="242" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_32" HPOS="148" VPOS="2818" WIDTH="1870" HEIGHT="69">
+              <String CONTENT="discharges" WC="0.96" ID="String_326" HPOS="148" VPOS="2822" WIDTH="294" HEIGHT="65" />
+              <String CONTENT="from" WC="0.96" ID="String_327" HPOS="483" VPOS="2820" WIDTH="136" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_328" HPOS="660" VPOS="2819" WIDTH="92" HEIGHT="51" />
+              <String CONTENT="bowels," WC="0.96" ID="String_329" HPOS="788" VPOS="2818" WIDTH="207" HEIGHT="64" />
+              <String CONTENT="and" WC="0.96" ID="String_330" HPOS="1037" VPOS="2820" WIDTH="105" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_331" HPOS="1183" VPOS="2820" WIDTH="44" HEIGHT="50" />
+              <String CONTENT="diuretic," WC="0.96" ID="String_332" HPOS="1263" VPOS="2820" WIDTH="236" HEIGHT="63" />
+              <String CONTENT="but" WC="0.96" ID="String_333" HPOS="1538" VPOS="2821" WIDTH="97" HEIGHT="50" />
+              <String CONTENT="it" WC="0.96" ID="String_334" HPOS="1677" VPOS="2821" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="occasions" WC="0.96" ID="String_335" HPOS="1758" VPOS="2822" WIDTH="260" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_33" HPOS="147" VPOS="2901" WIDTH="1871" HEIGHT="70">
+              <String CONTENT="watery" WC="0.96" ID="String_336" HPOS="147" VPOS="2908" WIDTH="195" HEIGHT="63" />
+              <String CONTENT="discharges" WC="0.96" ID="String_337" HPOS="382" VPOS="2902" WIDTH="298" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_338" HPOS="720" VPOS="2901" WIDTH="105" HEIGHT="50" />
+              <String CONTENT="those" WC="0.96" ID="String_339" HPOS="860" VPOS="2902" WIDTH="153" HEIGHT="50" />
+              <String CONTENT="resembling" WC="0.96" ID="String_340" HPOS="1050" VPOS="2902" WIDTH="320" HEIGHT="67" />
+              <String CONTENT="scrapings," WC="0.96" ID="String_341" HPOS="1414" VPOS="2903" WIDTH="283" HEIGHT="66" />
+              <String CONTENT="from" WC="0.96" ID="String_342" HPOS="1748" VPOS="2904" WIDTH="135" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_343" HPOS="1927" VPOS="2904" WIDTH="91" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_34" HPOS="146" VPOS="2983" WIDTH="1874" HEIGHT="69">
+              <String CONTENT="lower" WC="0.96" ID="String_344" HPOS="146" VPOS="2986" WIDTH="155" HEIGHT="51" />
+              <String CONTENT="part" WC="0.95" ID="String_345" HPOS="329" VPOS="2989" WIDTH="117" HEIGHT="63" />
+              <String CONTENT="of" WC="0.95" ID="String_346" HPOS="476" VPOS="2983" WIDTH="59" HEIGHT="51" />
+              <String CONTENT="the" WC="0.96" ID="String_347" HPOS="570" VPOS="2984" WIDTH="91" HEIGHT="50" />
+              <String CONTENT="intestine," WC="0.96" ID="String_348" HPOS="689" VPOS="2983" WIDTH="266" HEIGHT="63" />
+              <String CONTENT="which" WC="0.96" ID="String_349" HPOS="985" VPOS="2984" WIDTH="171" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_350" HPOS="1184" VPOS="2985" WIDTH="43" HEIGHT="49" />
+              <String CONTENT="sometimes" WC="0.96" ID="String_351" HPOS="1258" VPOS="2985" WIDTH="297" HEIGHT="50" />
+              <String CONTENT="a" WC="0.96" ID="String_352" HPOS="1586" VPOS="3003" WIDTH="29" HEIGHT="31" />
+              <String CONTENT="bad" WC="0.96" ID="String_353" HPOS="1642" VPOS="2985" WIDTH="104" HEIGHT="49" />
+              <String CONTENT="thing" WC="0.96" ID="String_354" HPOS="1781" VPOS="2985" WIDTH="154" HEIGHT="65" />
+              <String CONTENT="in" WC="0.96" ID="String_355" HPOS="1962" VPOS="2985" WIDTH="58" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_35" HPOS="148" VPOS="3065" WIDTH="1872" HEIGHT="68">
+              <String CONTENT="acute" WC="0.96" ID="String_356" HPOS="148" VPOS="3072" WIDTH="151" HEIGHT="46" />
+              <String CONTENT="diseases," WC="0.96" ID="String_357" HPOS="329" VPOS="3067" WIDTH="237" HEIGHT="61" />
+              <String CONTENT="more" WC="0.96" ID="String_358" HPOS="610" VPOS="3083" WIDTH="144" HEIGHT="33" />
+              <String CONTENT="especially" WC="0.96" ID="String_359" HPOS="794" VPOS="3065" WIDTH="275" HEIGHT="68" />
+              <String CONTENT="when" WC="0.96" ID="String_360" HPOS="1096" VPOS="3066" WIDTH="153" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_361" HPOS="1291" VPOS="3067" WIDTH="91" HEIGHT="50" />
+              <String CONTENT="flatulence" WC="0.96" ID="String_362" HPOS="1412" VPOS="3067" WIDTH="276" HEIGHT="50" />
+              <String CONTENT="cannot" WC="0.96" ID="String_363" HPOS="1730" VPOS="3071" WIDTH="191" HEIGHT="45" />
+              <String CONTENT="be" WC="0.96" ID="String_364" HPOS="1955" VPOS="3066" WIDTH="65" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_36" HPOS="149" VPOS="3147" WIDTH="1870" HEIGHT="69">
+              <String CONTENT="passed," WC="0.96" ID="String_365" HPOS="149" VPOS="3149" WIDTH="199" HEIGHT="67" />
+              <String CONTENT="but" WC="0.96" ID="String_366" HPOS="386" VPOS="3148" WIDTH="97" HEIGHT="51" />
+              <String CONTENT="rolls" WC="0.96" ID="String_367" HPOS="511" VPOS="3148" WIDTH="126" HEIGHT="51" />
+              <String CONTENT="backwards" WC="0.79" ID="String_368" HPOS="671" VPOS="3147" WIDTH="301" HEIGHT="50" />
+              <String CONTENT=";" WC="0.79" ID="String_369" HPOS="990" VPOS="3168" WIDTH="15" HEIGHT="41" />
+              <String CONTENT="and" WC="0.96" ID="String_370" HPOS="1051" VPOS="3148" WIDTH="103" HEIGHT="50" />
+              <String CONTENT="otherwise" WC="0.96" ID="String_371" HPOS="1198" VPOS="3148" WIDTH="272" HEIGHT="51" />
+              <String CONTENT="it" WC="0.96" ID="String_372" HPOS="1503" VPOS="3149" WIDTH="43" HEIGHT="50" />
+              <String CONTENT="diminishes" WC="0.96" ID="String_373" HPOS="1589" VPOS="3148" WIDTH="302" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_374" HPOS="1928" VPOS="3148" WIDTH="91" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_37" HPOS="150" VPOS="3228" WIDTH="1871" HEIGHT="69">
+              <String CONTENT="strength" WC="0.96" ID="String_375" HPOS="150" VPOS="3231" WIDTH="243" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_376" HPOS="433" VPOS="3230" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="makes" WC="0.96" ID="String_377" HPOS="566" VPOS="3229" WIDTH="180" HEIGHT="51" />
+              <String CONTENT="the" WC="0.96" ID="String_378" HPOS="775" VPOS="3230" WIDTH="92" HEIGHT="50" />
+              <String CONTENT="extremities" WC="0.96" ID="String_379" HPOS="898" VPOS="3230" WIDTH="317" HEIGHT="50" />
+              <String CONTENT="cold;" WC="0.96" ID="String_380" HPOS="1246" VPOS="3231" WIDTH="147" HEIGHT="62" />
+              <String CONTENT="this" WC="0.96" ID="String_381" HPOS="1433" VPOS="3230" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="is" WC="0.96" ID="String_382" HPOS="1567" VPOS="3230" WIDTH="42" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_383" HPOS="1648" VPOS="3230" WIDTH="90" HEIGHT="49" />
+              <String CONTENT="only" WC="0.96" ID="String_384" HPOS="1769" VPOS="3230" WIDTH="121" HEIGHT="66" />
+              <String CONTENT="bad" WC="0.96" ID="String_385" HPOS="1918" VPOS="3228" WIDTH="103" HEIGHT="51" />
+            </TextLine>
+            <TextLine ID="TextLine_38" HPOS="151" VPOS="3311" WIDTH="1868" HEIGHT="67">
+              <String CONTENT="effect" WC="0.96" ID="String_386" HPOS="151" VPOS="3313" WIDTH="151" HEIGHT="50" />
+              <String CONTENT="worth" WC="0.96" ID="String_387" HPOS="323" VPOS="3311" WIDTH="167" HEIGHT="52" />
+              <String CONTENT="mentioning" WC="0.96" ID="String_388" HPOS="518" VPOS="3311" WIDTH="335" HEIGHT="67" />
+              <String CONTENT="which" WC="0.96" ID="String_389" HPOS="881" VPOS="3311" WIDTH="170" HEIGHT="51" />
+              <String CONTENT="I" WC="0.93" ID="String_390" HPOS="1082" VPOS="3312" WIDTH="27" HEIGHT="49" />
+              <String CONTENT="have" WC="0.95" ID="String_391" HPOS="1139" VPOS="3313" WIDTH="131" HEIGHT="50" />
+              <String CONTENT="known" WC="0.96" ID="String_392" HPOS="1299" VPOS="3313" WIDTH="192" HEIGHT="49" />
+              <String CONTENT="to" WC="0.96" ID="String_393" HPOS="1520" VPOS="3317" WIDTH="55" HEIGHT="45" />
+              <String CONTENT="arise" WC="0.96" ID="String_394" HPOS="1605" VPOS="3311" WIDTH="130" HEIGHT="50" />
+              <String CONTENT="from" WC="0.95" ID="String_395" HPOS="1764" VPOS="3311" WIDTH="135" HEIGHT="49" />
+              <String CONTENT="the" WC="0.96" ID="String_396" HPOS="1927" VPOS="3312" WIDTH="92" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_39" HPOS="153" VPOS="3388" WIDTH="1868" HEIGHT="79">
+              <String CONTENT="oxymel." WC="0.91" ID="String_397" HPOS="153" VPOS="3394" WIDTH="220" HEIGHT="67" />
+              <String CONTENT="It" WC="0.94" ID="String_398" HPOS="459" VPOS="3393" WIDTH="55" HEIGHT="50" />
+              <String CONTENT="may" WC="0.96" ID="String_399" HPOS="556" VPOS="3411" WIDTH="122" HEIGHT="49" />
+              <String CONTENT="suit" WC="0.96" ID="String_400" HPOS="717" VPOS="3394" WIDTH="103" HEIGHT="49" />
+              <String CONTENT="well" WC="0.94" ID="String_401" HPOS="855" VPOS="3394" WIDTH="116" HEIGHT="49" />
+              <String CONTENT="to" WC="0.94" ID="String_402" HPOS="1004" VPOS="3398" WIDTH="57" HEIGHT="46" />
+              <String CONTENT="drink" WC="0.96" ID="String_403" HPOS="1101" VPOS="3394" WIDTH="157" HEIGHT="50" />
+              <String CONTENT="a" WC="0.95" ID="String_404" HPOS="1281" VPOS="3388" WIDTH="34" HEIGHT="79" />
+              <String CONTENT="little" WC="0.95" ID="String_405" HPOS="1368" VPOS="3394" WIDTH="136" HEIGHT="50" />
+              <String CONTENT="of" WC="0.96" ID="String_406" HPOS="1543" VPOS="3393" WIDTH="58" HEIGHT="50" />
+              <String CONTENT="this" WC="0.96" ID="String_407" HPOS="1630" VPOS="3392" WIDTH="105" HEIGHT="50" />
+              <String CONTENT="at" WC="0.96" ID="String_408" HPOS="1775" VPOS="3397" WIDTH="52" HEIGHT="47" />
+              <String CONTENT="night" WC="0.96" ID="String_409" HPOS="1866" VPOS="3393" WIDTH="155" HEIGHT="65" />
+            </TextLine>
+            <TextLine ID="TextLine_40" HPOS="148" VPOS="3473" WIDTH="1875" HEIGHT="68">
+              <String CONTENT="before" WC="0.96" ID="String_410" HPOS="148" VPOS="3476" WIDTH="177" HEIGHT="50" />
+              <String CONTENT="the" WC="0.96" ID="String_411" HPOS="353" VPOS="3475" WIDTH="92" HEIGHT="50" />
+              <String CONTENT="draught" WC="0.96" ID="String_412" HPOS="476" VPOS="3474" WIDTH="227" HEIGHT="67" />
+              <String CONTENT="of" WC="0.93" ID="String_413" HPOS="733" VPOS="3475" WIDTH="59" HEIGHT="50" />
+              <String CONTENT="ptisan," WC="0.91" ID="String_414" HPOS="819" VPOS="3475" WIDTH="191" HEIGHT="66" />
+              <String CONTENT="and" WC="0.96" ID="String_415" HPOS="1043" VPOS="3476" WIDTH="106" HEIGHT="50" />
+              <String CONTENT="when" WC="0.96" ID="String_416" HPOS="1176" VPOS="3477" WIDTH="153" HEIGHT="50" />
+              <String CONTENT="a" WC="0.95" ID="String_417" HPOS="1359" VPOS="3494" WIDTH="30" HEIGHT="32" />
+              <String CONTENT="considerable" WC="0.96" ID="String_418" HPOS="1418" VPOS="3473" WIDTH="352" HEIGHT="53" />
+              <String CONTENT="interval" WC="0.96" ID="String_419" HPOS="1798" VPOS="3474" WIDTH="225" HEIGHT="50" />
+            </TextLine>
+            <TextLine ID="TextLine_41" HPOS="149" VPOS="3555" WIDTH="1873" HEIGHT="69">
+              <String CONTENT="of" WC="0.95" ID="String_420" HPOS="149" VPOS="3558" WIDTH="59" HEIGHT="51" />
+              <String CONTENT="time" WC="0.95" ID="String_421" HPOS="242" VPOS="3559" WIDTH="129" HEIGHT="51" />
+              <String CONTENT="has" WC="0.96" ID="String_422" HPOS="399" VPOS="3557" WIDTH="95" HEIGHT="51" />
+              <String CONTENT="passed" WC="0.96" ID="String_423" HPOS="521" VPOS="3556" WIDTH="186" HEIGHT="67" />
+              <String CONTENT="after" WC="0.96" ID="String_424" HPOS="736" VPOS="3556" WIDTH="133" HEIGHT="52" />
+              <String CONTENT="the" WC="0.96" ID="String_425" HPOS="896" VPOS="3558" WIDTH="92" HEIGHT="51" />
+              <String CONTENT="draught" WC="0.95" ID="String_426" HPOS="1025" VPOS="3557" WIDTH="228" HEIGHT="67" />
+              <String CONTENT="there" WC="0.96" ID="String_427" HPOS="1296" VPOS="3558" WIDTH="148" HEIGHT="51" />
+              <String CONTENT="will" WC="0.95" ID="String_428" HPOS="1474" VPOS="3556" WIDTH="103" HEIGHT="53" />
+              <String CONTENT="be" WC="0.96" ID="String_429" HPOS="1610" VPOS="3555" WIDTH="65" HEIGHT="51" />
+              <String CONTENT="nothing" WC="0.96" ID="String_430" HPOS="1708" VPOS="3556" WIDTH="227" HEIGHT="66" />
+              <String CONTENT="to" WC="0.96" ID="String_431" HPOS="1967" VPOS="3562" WIDTH="55" HEIGHT="46" />
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "taxonomy-snapshots-v1",
+  "datasetId": "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
+  "license": "CC-BY-4.0",
+  "credit": "GBIF Secretariat: GBIF Backbone Taxonomy. https://doi.org/10.15468/39omei",
+  "files": [
+    {
+      "file": "data/taxonomy/raw/allium-cepa.json",
+      "sha256": "2e649489e58987a00b44532d08dab09207efadaecfac9509d990cefb266cff3d",
+      "url": "https://api.gbif.org/v1/species/match?verbose=true&name=Allium%20cepa",
+      "retrievedAt": "2026-11-06T08:48:31.5099147Z"
+    },
+    {
+      "file": "data/taxonomy/raw/allium-oleraceum.json",
+      "sha256": "932b99893e9189d8d2ea039e92e562e7b8a852ade330e12d8db9c51783d8dc5e",
+      "url": "https://api.gbif.org/v1/species/match?verbose=true&name=Allium%20oleraceum",
+      "retrievedAt": "2026-11-06T08:55:38.4928084Z"
+    },
+    {
+      "file": "data/taxonomy/raw/allium-porrum-l.json",
+      "sha256": "2ea69b3b83fad17faa7683798bfd26d35ebadfa6a87a7cfb5cc9aaffa11fed20",
+      "url": "https://api.gbif.org/v1/species/match?verbose=true&name=Allium%20porrum%20L.",
+      "retrievedAt": "2026-11-06T08:55:37.9406077Z"
+    },
+    {
+      "file": "data/taxonomy/raw/allium-porrum.json",
+      "sha256": "9ebb44d9101ec58d01abd48b5db99bacea1a5938adbe25d5b84b6b620132d8f6",
+      "url": "https://api.gbif.org/v1/species/match?verbose=true&name=Allium%20porrum",
+      "retrievedAt": "2026-11-06T08:48:32.6380216Z"
+    },
+    {
+      "file": "data/taxonomy/raw/allium-sativum.json",
+      "sha256": "739004509ac7099b9963556baf2b2578a25f513d4c2ce337acfa5d41004ceca4",
+      "url": "https://api.gbif.org/v1/species/match?verbose=true&name=Allium%20sativum",
+      "retrievedAt": "2026-11-06T08:48:32.0829222Z"
+    },
+    {
+      "file": "data/taxonomy/raw/backbone-metadata.json",
+      "sha256": "e1a98759ef9336070ced830cd77fbf4ca88e758495a12f0db8cb43225521aec8",
+      "url": "https://api.gbif.org/v1/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
+      "retrievedAt": "2026-11-06T08:55:37.3858253Z"
+    },
+    {
+      "file": "data/taxonomy/raw/usage-2856037.json",
+      "sha256": "0acc88ed338e7017e242dd2d67cacf72203ec87fd237927b27e44dbaef820ad3",
+      "url": "https://api.gbif.org/v1/species/2856037",
+      "retrievedAt": "2026-11-06T09:00:03.6593056Z"
+    }
+  ]
+}

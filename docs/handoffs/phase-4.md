@@ -1,0 +1,91 @@
+# Phase 4 handoff — scenarios, exact robustness and material versions
+
+Phase 4 implements the planned technical functionality in the user-authorized draft-corpus mode. The final executed gate record below is authoritative. Independent scientific release review remains pending; no original assertion was promoted to human accepted. Phase 5 has not started.
+
+## Use the product
+
+Open `http://127.0.0.1:4317/cases/balds-eyesalve/interpretations`, also linked as **Scenarios & robustness** from the source/material/evidence workspaces. Select an occurrence's identity interpretation, select formulation × assay records, evaluate, save named immutable revisions, use the current input as a reference and compare subsequent choices. Fork creates a new notebook; reset restores the actual saved-case baseline. Saved history and frozen analyses survive reload. Unsaved navigation has an explicit stay/discard choice.
+
+**Reviewed alternatives only** is the default. The original proposals are pending, so this mode admits none of them; zero selected groups means one fixed baseline world. To explore the source-backed original proposals, explicitly choose **Draft exploration / not a reviewed domain**. The control selects all three documented proposals, including the tentative edition gloss. Excluding a proposal from a selected group requires a subset rationale. Preview the exact admissible world count before auditing. Changing inputs invalidates the displayed preview/results and disables an audit until the current preview succeeds.
+
+For the authentic paired-arm example, select only the two 2020 formulation/assay records, choose draft exploration, exclude the tentative `Allium oleraceum?` gloss with an explicit rationale, and select **Conditional reported-name correspondence** as the clarification target. The two onion/leek worlds exchange which arm's reported label corresponds. At least one arm corresponds in each world; no one fixed arm corresponds in both. Strict material comparability remains unknown in both worlds because the source/material assertions are drafts and structured fields are missing. Changing the clarification target to **Strict material verdicts** gives the correct empty sufficient set: that target is invariant. Missing documentation is listed separately.
+
+Open `http://127.0.0.1:4317/materials/compare` for two-sided material-only comparison. Defaults are the real 2018 ES-O and 2020 ESO versions. Inspect draft composition and methods notes, strict unknown dimensions and exact source passages independently on each side, then swap. Differences do not infer historical lineage, chemical consequences, clinical effects or changes in reported outcomes. Historical sides require their exact associated case revisions and explicitly scoped identity assumptions; fixed tested materials cannot accept historical assignments.
+
+## Scientific boundary and justified plan refinement
+
+No authentic positive strict identity/material transition can be claimed from the current unreviewed corpus. The implementation therefore reports a **separate conditional reported-name correspondence vector**, rather than pretending that selecting onion authenticates a historical species. This projection uses the explicit onion/leek–Latin-name link in the retained 2020 discussion and each arm's actual composition record. It does not use a paper-wide plant list as an arm-level ingredient list. The tentative edition gloss stays unresolved; no synonymy is inferred. Every correspondence retains its supporting assertion IDs and its draft/not-taxonomic-equivalence limitation.
+
+This is an observable, source-traceable interpretation effect while the strict all-dimension comparator remains conservative. Study coverage and fixed-arm coverage are separate for both conditional names and strict material acceptance. Counts are enumerated worlds, never probabilities, independent experiments or estimates of biological benefit. All eight 2018 MIC values remain draft observations; six 2020/2023 arm outcomes remain explicitly unknown. The 102 original assertions still require independent review.
+
+Hypothetical field overrides have separate IDs, rationale, `inferred` state, `user_hypothesis` origin and pending review. They fork a virtual left material in memory; they never mutate the source material or the fixed tested material. The conditional evaluator explicitly whitelists only those virtual assertion IDs. Ordinary Phase 3 evaluation and documented-domain audits refuse overrides. Unreported fields remain unknown unless a permitted explicit hypothesis is supplied; matching unsupported historical units cannot establish a quantity match.
+
+Policy `material-audit-v1` is now **1.1.0**, SHA-256 `b3fe1d70264efac3df1c383abd3c128508368b8dfad24ba4e87b411c103bef61`. It adds independently scoped right-side assumptions, consistent species-level authority/usage keys and explicit conditional override handling; quantities require supported commensurate units. Older frozen records retain their original policy definitions. An old input pin cannot silently run under a new policy.
+
+## Architecture and implementation map
+
+| File | Responsibility |
+| --- | --- |
+| `packages/contracts/src/scenarios.ts` | Strict bounded scenario, context, domain, preview, diff, audit, material-side and frozen-analysis contracts |
+| `packages/core/src/scenarios.ts` | Pure validation, virtual material forks, complete enumeration, conditional correspondence, diff, robustness/coverage, exact sufficient sets and documentation dependencies |
+| `packages/core/src/compare.ts` | The sole material/context rules engine, now with two-sided assignments and explicit hypothesis IDs |
+| `apps/server/src/scenario-routes.ts` | Guarded local routes, authoritative pins, immutable saves/idempotency, rights-filtered proof closure and reproducible run storage |
+| `apps/server/src/database.ts` | Checksummed migration 5; immutable scenario revisions, computed runs and analysis records |
+| `apps/web/src/components/ScenarioWorkspace.tsx` | Scenario editor/history, evidence selection, reference diff, domain controls, audit, questions, source proof and frozen analysis inspection |
+| `apps/web/src/components/MaterialVersionCompare.tsx` | Real material version selectors, independent side assumptions, source notes/reasons, swap and freeze |
+| `apps/web/src/components/scenario-shared.tsx` | Abort/sequence guarded requests, source dialogs and conditional correspondence rendering |
+| `tools/benchmark-phase4.ts`, `tools/verify-phase4.mjs` | Recorded synthetic core load test and sequential full verification |
+
+No new repository, package, language runtime, model service, or wrapper was needed. The plan's R1 one-origin server, R2 source annotation adapter, R3 canonical hashes and R4 strict parser remain in use. Original TypeScript implements the small domain-specific engine. R5 remains the existing offline bibliography prototype for Phase 5; R6 remains unimplemented/conditional.
+
+## APIs and persistence
+
+All routes use `/api/v1`. Mutating requests reuse local-editor Origin, CSRF, read-only and rate protection. Parameters, bodies and responses use shared strict schemas. No source or analysis data is sent to an external service.
+
+| Method/path | Contract and behavior |
+| --- | --- |
+| `GET /cases/:id/interpretation-domain?revision=&selection=` | Pinned source-backed groups, proposal/support/review eligibility, exclusions and non-exhaustiveness limitation |
+| `POST /cases/:id/scenario-evaluate` | Context, complete bounded scenario and unique evidence IDs → conservative results, conditional correspondence and deterministic run hash |
+| `GET /cases/:id/scenarios` | Up to 200 retained immutable revisions for the case |
+| `POST /cases/:id/scenarios` | Request ID, draft actor, context, name, scenario, expected revision and optional notebook ID → immutable next revision; conflicts return 409 |
+| `POST /cases/:id/scenario-diff` | Complete before/after inputs under the same pins → changed, recomputed unchanged, unaffected, correspondence changes and dependency edges |
+| `POST /cases/:id/domain-preview` | Complete audit request → exact filtered/raw counts and exclusions; no sampling or evaluation |
+| `POST /cases/:id/robustness` | Complete audit request → every admissible world, four strict robustness states, separate coverage quantifiers and exact target-specific sufficient sets |
+| `GET /materials` | Immutable material versions with associated historical case revision and study IDs |
+| `POST /materials/compare` | Policy pin plus two version/assumption sides → material-only reasons, correct two-sided proof and run hash |
+| `POST /analyses` | Existing server-computed run hash, name and idempotency key → immutable frozen record; fabricated/unavailable runs are rejected |
+| `GET /analyses`, `GET /analyses/:id` | Metadata-only list or full immutable snapshot with payload, exact inputs/policy/records and content hash |
+
+Migration 5 adds `scenario_versions`, `scenario_runs` and `analysis_records`; update/delete guards protect all three. Migrations 1–4 are unchanged. Writes are immediate transactions with idempotency records. A repeated successful request returns its original record; reusing its key for different input is rejected. A stale notebook head cannot overwrite another tab's revision. Scenarios pin exact case revision/hash, corpus revision and policy hash. `latest` requests additionally reject a newer case revision; explicitly pinned earlier revisions remain inspectable under current corpus/policy pins. A saved scenario with older policy/corpus pins is loaded as a new fork rather than silently revising its old notebook.
+
+Computed runs retain the exact request, full policy definition, relevant original cases/materials/candidates/taxa/units/studies and the rights-filtered result/source closure. Robustness requests retain the full interpreted domain, selected alternatives, constraints, subset rationale and target. Frozen records copy these inputs and results; their timestamps are part of record identity, not scientific output. Runtime elapsed time is excluded from deterministic run hashes and frozen scientific payloads. A freeze does not recompute against current data. Phase 5 owns portable export/import and independent-process replay.
+
+## Bounds, invalidation and integrity
+
+- At most four groups, four alternatives per group, 256 raw combinations, **64 admissible worlds**, 50 unique evidence units, 20 field overrides and 16 constraints. Domain/source validation rejects duplicates, foreign occurrences, rejected choices, missing constraint choices, unsupported overrides, empty/oversized domains and invalid target dimensions. No sampling/truncation substitutes for the complete result.
+- Constraints are explicit forbidden combinations with rationale. User-created constraints require draft exploration. Missing documentation is never invented as a finite interpretation alternative. An occurrence with more than four documented proposals requires explicit further curation; it is not silently cut to four.
+- Exact clarification examines all subsets of the selected groups and all admissible world pairs. It returns all inclusion-minimal sufficient sets and separately the minimum cardinality. An invariant target yields `[[]]`; XOR-style joint effects and correlated domains are handled. No independent effect is asserted without an admissible pair differing solely in that group.
+- The current dependency implementation conservatively invalidates all selected comparisons when a shared left-material scientific choice changes, using the explicit full-recompute fallback. Rationale-only edits reuse unchanged results. It reports that behavior honestly, without invented incremental savings. Per-dimension findings retain source/assertion/hypothesis dependencies; conditional correspondence changes are reported even when strict results are recomputed unchanged.
+- Per-request memoization reuses identical material result profiles across worlds. Target hashes are cached for pairwise question checks; identical result objects contribute documentation provenance once. These optimizations preserve complete world rows and exact counts; the oracle tests check equivalence.
+- Stale asynchronous responses are hidden by exact path/input signatures and request sequence guards. Unmount/new requests abort waiting. Cancellation is a client action: bounded synchronous server work, particularly an already received save, may finish. The UI explicitly instructs checking history before retrying. Reset/load/fork clear obsolete save status.
+- Requests retain the existing 2 MB JSON/body/strict parsing boundary. Complete computed result plus frozen input must fit the 31 MB snapshot budget, leaving record-envelope room within 32 MB stored parsing limits; an oversized result is rejected intact. There is no partial saved audit. The deployment remains local loopback, not a publicly authenticated editor.
+
+## Verification and handoff gate
+
+`npm run verify:phase4` executes **licenses → build → typecheck → lint → data:validate → unit → integration → Chromium → benchmark** sequentially. Logs/report are in `artifacts/verification/phase-4`; browser results/traces/screenshots are in `artifacts/browser`. Earlier-phase regression tests remain included.
+
+New unit checks cover zero/64/65+ worlds, constraints reducing 72 raw combinations to exactly 64 versus 65, duplicates/empty domains, draft/hypothesis exclusions, all four statuses, authentic conditional arm correspondence/strict invariance, tentative gloss abstention, immutable virtual forks, two-sided identity assumptions, unsupported quantities and conditional-only hypothesis findings. **200 seeded edits** reconstruct the diff result and compare full result/reason/dependency structures with clean recomputation. **200 seeded target vectors** use an independent brute-force pairwise sufficiency/minimality oracle, alongside XOR/correlation/empty-set fixtures. Synthetic fixture acceptance exists only in test memory and never becomes corpus review.
+
+Integration checks save/idempotency/revisions, before/after diff, exact domain/audit/coverage, frozen inputs/policy/content hashes, reload, original corpus immutability, SQL update/delete protection, two-client revision conflicts, stale case/corpus/policy pins, reviewed-mode exclusion, hypothetical provenance, empty domains, duplicate units, CSRF and nonexistent run rejection. Real material comparisons check side attribution, swap symmetry, unknowns and absence of context/outcome claims.
+
+Nine new Chromium journeys pin the original case revision 1, remaining isolated from earlier tests' deliberately added proposals and changed baselines. They cover scenarios at **1440×900, 1024×768 and 390×844**, actual source dialogs, saved revision reload/reset, changed correspondence with unchanged strict verdict, exact audit/coverage/question sets, freeze/reload, keyboard source access, hypotheses/invalid preview, unsaved navigation, delayed responses/cancellation and two real conflicting tabs. The material journeys cover both precise source sides, swap, complete unknown reasons, snapshot save and reload at all three sizes. Normal paths assert no page/console/network errors, no horizontal overflow and no WCAG A/AA-tag Axe violations. Expected invalid-input/conflict tests inspect the actual server error separately. Rendered desktop/phone screenshots were visually inspected.
+
+The core load benchmark is explicitly synthetic: three groups of four alternatives and 50 unique synthetic unit IDs repeat authentic incomplete material profiles. It times complete core audits after three warmups, retains 20 raw samples and records p95/hardware/policy. It excludes HTTP, database persistence, response serialization and browser rendering, and makes no scientific-accuracy claim or fully curated worst-case guarantee. The initial p95 exceeded 500 ms; repeated target hashing/provenance work was removed and measured again. The final `benchmark.json` is authoritative.
+
+**Final executed gate record:** 2026-11-06T12:10:14.478Z. All nine gates returned zero. **109 unit + 42 integration + 32 Chromium tests = 183 passed**, with no skipped/flaky/unexpected browser result. Production build, strict typing, lint, license inventory (408 lockfile entries / 331 installed), retained source/rights/data integrity and the recorded synthetic core load gate passed. Final p95 is **238.722 ms** for 64 worlds x 50 units on the recorded Intel i5-13420H / 16 GB Windows / Node 24.21.0 machine, after three warmups and 20 measured runs. This is the qualified core workload described above, not an accuracy result or HTTP/browser latency guarantee. Nonfatal upstream Zod annotation and Vite main-chunk-size warnings remain in the build log.
+
+The actual user workspace was backed up before migration and refreshed to the final production build on port 4317. `live-browser.json` records migration 5, source/material browser interactions, deterministic scenario run hash, unchanged case hash and no console/network errors. `workspace-receipt.json` confirms SQLite and backup integrity, two original case revisions, 102 pending assertions, two preserved pending literature records and one preserved licensed paragraph receipt. Only two deterministic computed run records were added; no scientific record or review status changed. The source/hash/domain review packet is `docs/review/phase-4-domain-review.md`; its independent checks remain explicitly pending.
+
+Code/data revision: `77f584b405c171eaae7dc6fb85c4a7056031a7f456247a7bcd5431f17bb08c13` across **112 files**, with explicit hashing method/list in `artifacts/verification/phase-4/source-manifest.json`. There is no Git repository in this workspace. Future rule changes require a new policy version/hash and reproducibility record.
+
+The frozen corpus SHA-256 remains `623a6697e3bd9fc129cec099e989860cd04c563f1fe3049b5415dcb95c9fe0fd`. Software completion in draft mode does not complete the independent corpus release gate. Phase 5 remains responsible for rights-aware dossiers/reference exports, portable bundle replay/import, empirical baseline evaluation and final complete-product release acceptance. No Phase 5 export/replay/accuracy control has been added.

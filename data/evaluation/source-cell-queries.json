@@ -1,0 +1,455 @@
+{
+  "version": "source-cell-fixture-1",
+  "authorType": "automated_assistant",
+  "reference": "Fuchs et al. 2018 Table 2 / independently specified row-column values; controlled conflicts are constructed tasks.",
+  "queries": [
+    {
+      "id": "published-ATCC-6538-ES-O",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-atcc-6538-es-o",
+      "expectedValue": 0.625
+    },
+    {
+      "id": "published-ATCC-6538-ES-L",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-L",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-atcc-6538-es-l",
+      "expectedValue": 0.625
+    },
+    {
+      "id": "published-ATCC-6538-ES-GBBr",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-atcc-6538-es-gbbr",
+      "expectedValue": 0.625
+    },
+    {
+      "id": "published-ATCC-6538-ES-GB",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-atcc-6538-es-gb",
+      "expectedValue": 0.625
+    },
+    {
+      "id": "published-LAC-ES-O",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-lac-es-o",
+      "expectedValue": 2.5
+    },
+    {
+      "id": "published-LAC-ES-L",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-L",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-lac-es-l",
+      "expectedValue": 1.25
+    },
+    {
+      "id": "published-LAC-ES-GBBr",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-lac-es-gbbr",
+      "expectedValue": 1.25
+    },
+    {
+      "id": "published-LAC-ES-GB",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-lac-es-gb",
+      "expectedValue": 1.25
+    },
+    {
+      "id": "published-PAO1-ES-O",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pao1-es-o",
+      "expectedValue": 5
+    },
+    {
+      "id": "published-PAO1-ES-L",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-L",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pao1-es-l",
+      "expectedValue": 5
+    },
+    {
+      "id": "published-PAO1-ES-GBBr",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pao1-es-gbbr",
+      "expectedValue": 2.5
+    },
+    {
+      "id": "published-PAO1-ES-GB",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pao1-es-gb",
+      "expectedValue": 2.5
+    },
+    {
+      "id": "published-PA215-ES-O",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pa215-es-o",
+      "expectedValue": 10
+    },
+    {
+      "id": "published-PA215-ES-L",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-L",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pa215-es-l",
+      "expectedValue": 5
+    },
+    {
+      "id": "published-PA215-ES-GBBr",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pa215-es-gbbr",
+      "expectedValue": 2.5
+    },
+    {
+      "id": "published-PA215-ES-GB",
+      "kind": "published_cell",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": "obs-2018-pa215-es-gb",
+      "expectedValue": 5
+    },
+    {
+      "id": "controlled-1",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "Newman",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-2",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-L",
+        "endpoint": "CFU-based log change relative to control",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-3",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "mg/mL"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-4",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t003",
+        "strain": "ATCC 6538",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-5",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "Newman",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-6",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-L",
+        "endpoint": "CFU-based log change relative to control",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-7",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "LAC",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "mg/mL"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-8",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t003",
+        "strain": "LAC",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-9",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "Newman",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-10",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-L",
+        "endpoint": "CFU-based log change relative to control",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-11",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PAO1",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "mg/mL"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-12",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t003",
+        "strain": "PAO1",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-13",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "Newman",
+        "columnLabel": "ES-O",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-14",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-L",
+        "endpoint": "CFU-based log change relative to control",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-15",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t002",
+        "strain": "PA215",
+        "columnLabel": "ES-GBBr",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "mg/mL"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    },
+    {
+      "id": "controlled-16",
+      "kind": "controlled_conflict",
+      "query": {
+        "studyId": "study-fuchs-2018",
+        "tableId": "pone.0208108.t003",
+        "strain": "PA215",
+        "columnLabel": "ES-GB",
+        "endpoint": "minimum inhibitory concentration",
+        "unit": "% v/v"
+      },
+      "expectedId": null,
+      "expectedValue": null
+    }
+  ]
+}
