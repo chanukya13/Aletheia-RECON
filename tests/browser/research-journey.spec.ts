@@ -1,6 +1,11 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { downloadFile, readJson, replayFile } from "./phase5-helpers";
+import {
+  downloadFile,
+  readJson,
+  replayFile,
+  openNavigation,
+} from "./phase5-helpers";
 
 async function usable(page: Page) {
   expect(
@@ -32,7 +37,7 @@ for (const width of [1440, 390])
     });
     await page.goto("/");
     await expect(page.getByRole("heading", { level: 1 })).toContainText(
-      "Follow the word.",
+      "Old remedies.",
     );
     await usable(page);
     await page
@@ -154,7 +159,7 @@ test("research home and executed baseline results are usable at four widths; rep
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/research");
     await expect(page.getByRole("heading", { level: 1 })).toContainText(
-      "Follow the word.",
+      "Old remedies.",
     );
     await usable(page);
     await page.screenshot({
@@ -175,6 +180,7 @@ test("research home and executed baseline results are usable at four widths; rep
         .getByRole("link")
         .all())
         await expect(step).toBeInViewport({ ratio: 1 });
+      await openNavigation(page);
       await page
         .getByRole("navigation", { name: "Main navigation" })
         .getByRole("link", { name: "Case library", exact: true })
@@ -186,6 +192,7 @@ test("research home and executed baseline results are usable at four widths; rep
         }),
       ).toBeVisible();
     }
+    await openNavigation(page);
     await page
       .getByRole("navigation", { name: "Main navigation" })
       .getByRole("link", { name: "Evaluation", exact: true })

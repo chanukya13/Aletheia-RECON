@@ -3,6 +3,9 @@ import AxeBuilder from "@axe-core/playwright";
 import { resolve } from "node:path";
 
 async function twoArms(page: Page) {
+  await page
+    .getByText("Advanced: test alternative readings", { exact: true })
+    .click();
   await expect(page.locator(".scenario-evidence input")).toHaveCount(14);
   const data = await (await page.request.get("/api/v1/studies")).json();
   const labels = data.evidenceUnits

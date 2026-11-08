@@ -351,9 +351,16 @@ function ScenarioEditor({
       <div className="capability-note">
         <strong>Interpretations remain assumptions.</strong>
         <p>
-          {domain.limitation} All runs pin case r{context.caseRevision}, corpus
-          and policy hashes. A count of worlds is not a probability.
+          Choose what to test; RECON keeps your assumptions separate from source
+          facts.
         </p>
+        <details>
+          <summary>Scope and scientific limits</summary>
+          <p>
+            {domain.limitation} All runs pin case r{context.caseRevision},
+            corpus and policy hashes. A count of worlds is not a probability.
+          </p>
+        </details>
       </div>
       <div className="scenario-layout">
         <section className="scenario-editor">
@@ -366,56 +373,74 @@ function ScenarioEditor({
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          {data.material.componentSlots.map((slot) => (
-            <fieldset key={slot.id}>
-              <legend>
-                {data.assertions.find((a) => a.id === slot.termAssertionId)
-                  ?.state === "recorded"
-                  ? String(
-                      (
-                        data.assertions.find(
-                          (a) => a.id === slot.termAssertionId,
-                        ) as { value: unknown }
-                      ).value,
-                    )
-                  : slot.id}
-              </legend>
-              <label>
-                Identity interpretation
-                <select
-                  aria-label={`Identity interpretation ${slot.id}`}
-                  value={
-                    scenario.assignments.find((a) => a.occurrenceId === slot.id)
-                      ?.candidateId ?? ""
-                  }
-                  onChange={(e) => selectCandidate(slot.id, e.target.value)}
-                >
-                  <option value="">Keep unresolved</option>
-                  {data.candidates
-                    .filter(
-                      (c) =>
-                        slot.candidateIds.includes(c.id) &&
-                        c.status !== "rejected",
-                    )
-                    .map((c) => (
-                      <option key={c.id} value={c.id}>
-                        {c.proposedName} / {c.status.replaceAll("_", " ")}
-                      </option>
-                    ))}
-                </select>
-              </label>
-              {data.candidates
-                .filter((c) => slot.candidateIds.includes(c.id))
-                .map((c) => (
-                  <SourceProof
-                    key={c.id}
-                    proof={data}
-                    assertionIds={c.supportAssertionIds}
-                    title={`Source basis: ${c.proposedName}`}
-                  />
-                ))}
-            </fieldset>
-          ))}
+          {data.material.componentSlots
+            .filter((slot) =>
+              slot.candidateIds.some((candidateId) =>
+                data.candidates.some(
+                  (candidate) =>
+                    candidate.id === candidateId &&
+                    candidate.status !== "rejected",
+                ),
+              ),
+            )
+            .map((slot) => (
+              <fieldset key={slot.id}>
+                <legend>
+                  {data.assertions.find((a) => a.id === slot.termAssertionId)
+                    ?.state === "recorded"
+                    ? String(
+                        (
+                          data.assertions.find(
+                            (a) => a.id === slot.termAssertionId,
+                          ) as { value: unknown }
+                        ).value,
+                      )
+                    : slot.id}
+                </legend>
+                <label>
+                  Identity interpretation
+                  <select
+                    aria-label={`Identity interpretation ${slot.id}`}
+                    value={
+                      scenario.assignments.find(
+                        (a) => a.occurrenceId === slot.id,
+                      )?.candidateId ?? ""
+                    }
+                    onChange={(e) => selectCandidate(slot.id, e.target.value)}
+                  >
+                    <option value="">Keep unresolved</option>
+                    {data.candidates
+                      .filter(
+                        (c) =>
+                          slot.candidateIds.includes(c.id) &&
+                          c.status !== "rejected",
+                      )
+                      .map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.proposedName} / {c.status.replaceAll("_", " ")}
+                        </option>
+                      ))}
+                  </select>
+                </label>
+                {data.candidates
+                  .filter((c) => slot.candidateIds.includes(c.id))
+                  .map((c) => (
+                    <SourceProof
+                      key={c.id}
+                      proof={data}
+                      assertionIds={c.supportAssertionIds}
+                      title={`Source basis: ${c.proposedName}`}
+                    />
+                  ))}
+              </fieldset>
+            ))}
+          <p className="form-hint">
+            Other recorded ingredients remain in the audit.{" "}
+            <Link to={`/cases/${id}/material`}>
+              Inspect all material details
+            </Link>
+            .
+          </p>
           <label>
             Scenario rationale
             <textarea
@@ -652,185 +677,190 @@ function ScenarioEditor({
               </details>
             </section>
           ) : null}
-          <section className="robustness-controls">
-            <h2>Exact bounded robustness audit</h2>
-            <label>
-              Domain review mode
-              <select
-                value={mode}
-                onChange={(e) => {
-                  const mode = e.target.value as
-                    | "reviewed"
-                    | "draft_exploration";
-                  setMode(mode);
-                  setSelections(
-                    domain.groups.flatMap((g) => {
-                      const alternatives = g.alternatives.filter(
-                        (a) =>
-                          mode === "draft_exploration" || a.eligibleReviewed,
-                      );
-                      return alternatives.length
-                        ? [
-                            {
-                              groupId: g.id,
-                              alternativeIds: alternatives.map((a) => a.id),
-                            },
-                          ]
-                        : [];
-                    }),
-                  );
-                  setConstraints([]);
-                }}
-              >
-                <option value="reviewed">Reviewed alternatives only</option>
-                <option value="draft_exploration">
-                  Draft exploration / not a reviewed domain
-                </option>
-              </select>
-            </label>
-            {mode === "draft_exploration" ? (
-              <p className="draft-banner">
-                Exploratory source-backed drafts. Results cannot be presented as
-                reviewed-domain robustness.
-              </p>
-            ) : (
-              <p className="form-hint">
-                Pending alternatives are excluded. Zero selected groups means
-                exactly one fixed baseline world.
-              </p>
-            )}
-            {domain.groups.map((group) => (
-              <fieldset key={group.id}>
-                <legend>{group.label}</legend>
-                {group.alternatives.map((a) => (
-                  <label className="checkbox-label" key={a.id}>
-                    <input
-                      type="checkbox"
-                      disabled={mode === "reviewed" && !a.eligibleReviewed}
-                      checked={
-                        selections
-                          .find((s) => s.groupId === group.id)
-                          ?.alternativeIds.includes(a.id) ?? false
-                      }
-                      onChange={(e) =>
-                        setSelections((old) => {
-                          const selected =
-                            old.find((s) => s.groupId === group.id)
-                              ?.alternativeIds ?? [];
-                          const ids = e.target.checked
-                            ? [...selected, a.id]
-                            : selected.filter((id) => id !== a.id);
-                          return old
-                            .filter((s) => s.groupId !== group.id)
-                            .concat(
-                              ids.length
-                                ? [{ groupId: group.id, alternativeIds: ids }]
-                                : [],
-                            );
-                        })
-                      }
-                    />
-                    {a.label} / {a.reviewState}
-                  </label>
-                ))}
-                <SourceProof
-                  proof={data}
-                  assertionIds={group.alternatives.flatMap(
-                    (a) => a.supportAssertionIds,
-                  )}
-                  title={`Inspect ${group.label} alternatives`}
-                />
-              </fieldset>
-            ))}
-            <label>
-              Subset rationale
-              <textarea
-                value={subsetRationale}
-                rows={2}
-                maxLength={1000}
-                onChange={(e) => setSubsetRationale(e.target.value)}
-                placeholder="Required when excluding alternatives from a selected group…"
-              />
-            </label>
-            <ConstraintEditor
-              domain={domain}
-              constraints={constraints}
-              onChange={setConstraints}
-              disabled={mode === "reviewed"}
-            />
-            <label>
-              Clarification target
-              <select
-                value={target}
-                onChange={(e) => setTarget(e.target.value as typeof target)}
-              >
-                <option value="material_verdict_vector">
-                  Strict material verdicts
-                </option>
-                <option value="conditional_identity_vector">
-                  Conditional reported-name correspondence
-                </option>
-                <option value="named_dimension_vector">
-                  Named strict dimension
-                </option>
-              </select>
-            </label>
-            {target === "named_dimension_vector" ? (
+          <details className="research-disclosure scenario-advanced">
+            <summary>Advanced: test alternative readings</summary>
+            <section className="robustness-controls">
+              <h2>Exact bounded robustness audit</h2>
               <label>
-                Target dimension
+                Domain review mode
                 <select
-                  value={targetDimension ?? "identity"}
-                  onChange={(e) =>
-                    setTargetDimension(e.target.value as typeof targetDimension)
-                  }
+                  value={mode}
+                  onChange={(e) => {
+                    const mode = e.target.value as
+                      | "reviewed"
+                      | "draft_exploration";
+                    setMode(mode);
+                    setSelections(
+                      domain.groups.flatMap((g) => {
+                        const alternatives = g.alternatives.filter(
+                          (a) =>
+                            mode === "draft_exploration" || a.eligibleReviewed,
+                        );
+                        return alternatives.length
+                          ? [
+                              {
+                                groupId: g.id,
+                                alternativeIds: alternatives.map((a) => a.id),
+                              },
+                            ]
+                          : [];
+                      }),
+                    );
+                    setConstraints([]);
+                  }}
                 >
-                  {[
-                    "identity",
-                    "composition",
-                    "part_state",
-                    "preparation",
-                    "processing_order",
-                    "contact",
-                    "maturation_thermal",
-                    "quantity",
-                    "characterization",
-                  ].map((d) => (
-                    <option key={d}>{d}</option>
-                  ))}
+                  <option value="reviewed">Reviewed alternatives only</option>
+                  <option value="draft_exploration">
+                    Draft exploration / not a reviewed domain
+                  </option>
                 </select>
               </label>
-            ) : null}
-            <div className="form-actions">
-              <button
-                className="secondary-button"
-                disabled={!evidenceIds.length || preview.busy}
-                onClick={() =>
-                  void preview.run(`/cases/${id}/domain-preview`, auditBody)
-                }
-              >
-                Preview exact domain
-              </button>
-              <button
-                className="primary-button"
-                disabled={!previewed || audit.busy}
-                onClick={() =>
-                  void audit.run(`/cases/${id}/robustness`, auditBody)
-                }
-              >
-                Audit all selected alternatives
-              </button>
-            </div>
-            <TaskStatus task={preview} />
-            <TaskStatus task={audit} />
-            {previewed ? (
-              <p role="status">
-                {previewed.worldCount} admissible world(s) /{" "}
-                {previewed.rawWorldCount} raw combinations.{" "}
-                {previewed.excludedAlternatives.length} alternative(s) excluded
-                by subset choice. {previewed.limitation}
-              </p>
-            ) : null}
-          </section>
+              {mode === "draft_exploration" ? (
+                <p className="draft-banner">
+                  Exploratory source-backed drafts. Results cannot be presented
+                  as reviewed-domain robustness.
+                </p>
+              ) : (
+                <p className="form-hint">
+                  Pending alternatives are excluded. Zero selected groups means
+                  exactly one fixed baseline world.
+                </p>
+              )}
+              {domain.groups.map((group) => (
+                <fieldset key={group.id}>
+                  <legend>{group.label}</legend>
+                  {group.alternatives.map((a) => (
+                    <label className="checkbox-label" key={a.id}>
+                      <input
+                        type="checkbox"
+                        disabled={mode === "reviewed" && !a.eligibleReviewed}
+                        checked={
+                          selections
+                            .find((s) => s.groupId === group.id)
+                            ?.alternativeIds.includes(a.id) ?? false
+                        }
+                        onChange={(e) =>
+                          setSelections((old) => {
+                            const selected =
+                              old.find((s) => s.groupId === group.id)
+                                ?.alternativeIds ?? [];
+                            const ids = e.target.checked
+                              ? [...selected, a.id]
+                              : selected.filter((id) => id !== a.id);
+                            return old
+                              .filter((s) => s.groupId !== group.id)
+                              .concat(
+                                ids.length
+                                  ? [{ groupId: group.id, alternativeIds: ids }]
+                                  : [],
+                              );
+                          })
+                        }
+                      />
+                      {a.label} / {a.reviewState}
+                    </label>
+                  ))}
+                  <SourceProof
+                    proof={data}
+                    assertionIds={group.alternatives.flatMap(
+                      (a) => a.supportAssertionIds,
+                    )}
+                    title={`Inspect ${group.label} alternatives`}
+                  />
+                </fieldset>
+              ))}
+              <label>
+                Subset rationale
+                <textarea
+                  value={subsetRationale}
+                  rows={2}
+                  maxLength={1000}
+                  onChange={(e) => setSubsetRationale(e.target.value)}
+                  placeholder="Required when excluding alternatives from a selected group…"
+                />
+              </label>
+              <ConstraintEditor
+                domain={domain}
+                constraints={constraints}
+                onChange={setConstraints}
+                disabled={mode === "reviewed"}
+              />
+              <label>
+                Clarification target
+                <select
+                  value={target}
+                  onChange={(e) => setTarget(e.target.value as typeof target)}
+                >
+                  <option value="material_verdict_vector">
+                    Strict material verdicts
+                  </option>
+                  <option value="conditional_identity_vector">
+                    Conditional reported-name correspondence
+                  </option>
+                  <option value="named_dimension_vector">
+                    Named strict dimension
+                  </option>
+                </select>
+              </label>
+              {target === "named_dimension_vector" ? (
+                <label>
+                  Target dimension
+                  <select
+                    value={targetDimension ?? "identity"}
+                    onChange={(e) =>
+                      setTargetDimension(
+                        e.target.value as typeof targetDimension,
+                      )
+                    }
+                  >
+                    {[
+                      "identity",
+                      "composition",
+                      "part_state",
+                      "preparation",
+                      "processing_order",
+                      "contact",
+                      "maturation_thermal",
+                      "quantity",
+                      "characterization",
+                    ].map((d) => (
+                      <option key={d}>{d}</option>
+                    ))}
+                  </select>
+                </label>
+              ) : null}
+              <div className="form-actions">
+                <button
+                  className="secondary-button"
+                  disabled={!evidenceIds.length || preview.busy}
+                  onClick={() =>
+                    void preview.run(`/cases/${id}/domain-preview`, auditBody)
+                  }
+                >
+                  Preview exact domain
+                </button>
+                <button
+                  className="primary-button"
+                  disabled={!previewed || audit.busy}
+                  onClick={() =>
+                    void audit.run(`/cases/${id}/robustness`, auditBody)
+                  }
+                >
+                  Audit all selected alternatives
+                </button>
+              </div>
+              <TaskStatus task={preview} />
+              <TaskStatus task={audit} />
+              {previewed ? (
+                <p role="status">
+                  {previewed.worldCount} admissible world(s) /{" "}
+                  {previewed.rawWorldCount} raw combinations.{" "}
+                  {previewed.excludedAlternatives.length} alternative(s)
+                  excluded by subset choice. {previewed.limitation}
+                </p>
+              ) : null}
+            </section>
+          </details>
           {audited ? (
             <AuditPanel
               result={audited}

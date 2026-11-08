@@ -1,3 +1,4 @@
+import { openNavigation } from "./phase5-helpers";
 import { test, expect } from "@playwright/test";
 import { resolve } from "node:path";
 import {
@@ -63,6 +64,7 @@ for (const viewport of [
         `artifacts/browser/screenshots/${browserName}-dossier-${viewport.name}.png`,
       ),
     });
+    await openNavigation(page);
     await page
       .getByRole("navigation", { name: "Main navigation" })
       .getByRole("link", { name: "Dossiers", exact: true })
@@ -75,13 +77,11 @@ for (const viewport of [
       page.getByText("Offline decision replay: reproduced", { exact: true }),
     ).toBeVisible();
     expect(errors).toEqual([]);
-    await test
-      .info()
-      .attach("actual-browser-version", {
-        body: JSON.stringify({
-          browser: browserName,
-          version: browser.version(),
-        }),
-        contentType: "application/json",
-      });
+    await test.info().attach("actual-browser-version", {
+      body: JSON.stringify({
+        browser: browserName,
+        version: browser.version(),
+      }),
+      contentType: "application/json",
+    });
   });

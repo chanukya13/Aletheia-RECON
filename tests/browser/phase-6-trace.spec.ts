@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { openNavigation } from "./phase5-helpers";
 for (const width of [1440, 390])
   test(`source trace exclusion, exact source, restore and oxymel at ${width}px`, async ({
     page,
@@ -14,6 +15,7 @@ for (const width of [1440, 390])
       if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`);
     });
     await page.goto("/cases");
+    await openNavigation(page);
     await page
       .getByRole("link", { name: "Interpretation trace", exact: true })
       .click();
@@ -55,14 +57,12 @@ for (const width of [1440, 390])
     await expect(
       editorial.getByText("Recorded support available", { exact: true }),
     ).toBeVisible();
-    const original = page
-      .locator("article")
-      .filter({
-        has: page.getByRole("button", {
-          name: "Exclude original-language printed edition · span-cropleac-original",
-          exact: true,
-        }),
-      });
+    const original = page.locator("article").filter({
+      has: page.getByRole("button", {
+        name: "Exclude original-language printed edition · span-cropleac-original",
+        exact: true,
+      }),
+    });
     await original
       .getByRole("button", { name: "Inspect exact passage" })
       .click();

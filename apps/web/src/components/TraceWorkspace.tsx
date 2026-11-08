@@ -7,6 +7,7 @@ import {
 } from "@recon/contracts";
 import { api } from "../api";
 import { PassageInspection } from "./PassageInspection";
+import { Icon } from "./Icon";
 import "../research.css";
 
 const roles: Record<
@@ -45,12 +46,11 @@ export default function TraceWorkspace() {
     setParams({ q: query, exclude: next });
   }
   return (
-    <div className="research-workspace page-width">
+    <div className="research-workspace trace-workspace page-width">
       <p className="eyebrow">Words, interpretations and sources</p>
       <h1>Trace an interpretation.</h1>
       <p>
-        Search six pinned source revisions. Follow the recorded basis for each
-        proposed identity.
+        One word, several readings. See which sources support each proposal.
       </p>
       <form
         className="research-search"
@@ -82,17 +82,69 @@ export default function TraceWorkspace() {
           {trace.isFetching ? (
             <p role="status">Updating source support…</p>
           ) : null}
-          <div className="research-notice">
-            Automated source checks preserve the original wording and each
-            contributor’s role. Exclusion shows which recorded support survives
-            within these indexed passages.
-          </div>
+          <nav
+            className="trace-flow"
+            aria-label="Source roles in this investigation"
+          >
+            {[
+              {
+                label: "Printed source",
+                icon: "book" as const,
+                items: data.contributions.filter((c) =>
+                  ["original_language_edition", "translation"].includes(c.role),
+                ),
+              },
+              {
+                label: "Editorial reading",
+                icon: "trace" as const,
+                items: data.contributions.filter(
+                  (c) => c.role === "editorial_note",
+                ),
+              },
+              {
+                label: "Modern research",
+                icon: "flask" as const,
+                items: data.contributions.filter((c) =>
+                  ["modern_interpretation", "modern_tested_material"].includes(
+                    c.role,
+                  ),
+                ),
+              },
+            ]
+              .filter((group) => group.items.length)
+              .map((group) => (
+                <a
+                  href={`#contribution-${group.items[0]!.spanId}`}
+                  key={group.label}
+                >
+                  <Icon name={group.icon} size={24} />
+                  <strong>{group.label}</strong>
+                  <span>
+                    {group.items.length} recorded contribution
+                    {group.items.length === 1 ? "" : "s"}
+                  </span>
+                </a>
+              ))}
+          </nav>
+          <p className="trace-scope">
+            Source roles stay separate. Excluding a contribution recalculates
+            recorded support; it does not establish historical identity.
+          </p>
           <section aria-labelledby="interpretation-heading">
             <h2 id="interpretation-heading">Linked interpretations</h2>
             <div className="research-grid">
               {data.candidates.length ? (
                 data.candidates.map((c) => (
                   <article key={c.id} className="research-card">
+                    <span className="candidate-common-name">
+                      {(
+                        {
+                          "Allium cepa": "Onion",
+                          "Allium porrum": "Leek",
+                          "Allium oleraceum?": "Editorial alternative",
+                        } as Record<string, string>
+                      )[c.name] ?? "Proposed reading"}
+                    </span>
                     <h3>{c.name}</h3>
                     <p role="status">
                       <strong>
@@ -105,12 +157,17 @@ export default function TraceWorkspace() {
                       {c.survivingPaths} active supporting path(s) / {c.review}{" "}
                       review
                     </p>
-                    {c.paths.map((p, i) => (
-                      <p className="form-hint" key={i}>
-                        {p.assertionIds.join(" → ")} /{" "}
-                        {p.excluded ? "excluded" : "active"}
-                      </p>
-                    ))}
+                    <details>
+                      <summary>
+                        Inspect {c.paths.length} recorded support path(s)
+                      </summary>
+                      {c.paths.map((p, i) => (
+                        <p className="form-hint" key={i}>
+                          {p.assertionIds.join(" → ")} /{" "}
+                          {p.excluded ? "excluded" : "active"}
+                        </p>
+                      ))}
+                    </details>
                     <Link
                       to={`/cases/balds-eyesalve/interpretations?candidate=${c.id}&study=study-fuchs-2018`}
                     >
@@ -127,9 +184,9 @@ export default function TraceWorkspace() {
           </section>
           <section>
             <h2>Source contributions</h2>
-            <p>
-              Pages from the same edition share a group. Each contribution keeps
-              its exact wording.
+            <p className="form-hint">
+              Open a quotation or inspect its exact location. Pages from the
+              same edition are grouped.
             </p>
             {data.contributions.length ? (
               data.contributions.map((c) => {
@@ -144,12 +201,19 @@ export default function TraceWorkspace() {
                   <article
                     className={`research-card ${c.excluded ? "excluded-contribution" : ""}`}
                     key={c.spanId}
+                    id={`contribution-${c.spanId}`}
                   >
                     <p className="eyebrow">
                       {c.workGroup} / {roles[c.role]}
                     </p>
                     <h3>{source.creators.join(", ")}</h3>
-                    <blockquote>{span.exact}</blockquote>
+                    <details
+                      className="source-quotation"
+                      open={data.contributions.length <= 2}
+                    >
+                      <summary>Read quoted passage</summary>
+                      <blockquote>{span.exact}</blockquote>
+                    </details>
                     <p className="form-hint">
                       {source.publicationDate} / {span.locator.label}
                     </p>
@@ -173,8 +237,8 @@ export default function TraceWorkspace() {
               <p>No indexed source contribution matched.</p>
             )}
           </section>
-          <section>
-            <h2>Literal matches</h2>
+          <details className="research-disclosure">
+            <summary>Literal matches ({data.literals.length})</summary>
             <p className="form-hint">
               Showing up to 200 occurrences per source revision.
             </p>
@@ -199,7 +263,7 @@ export default function TraceWorkspace() {
                 />
               </article>
             ))}
-          </section>
+          </details>
           <div className="research-actions">
             <Link to="/outcomes">Compare measured onion/leek outcomes ↗</Link>
             <Link to="/cases/balds-eyesalve/interpretations">

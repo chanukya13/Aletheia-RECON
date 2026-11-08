@@ -1,8 +1,12 @@
 # Aletheia RECON
 
-[Open the live research workbench](https://aletheia-recon.onrender.com/research) · [Verified Linux release](https://github.com/chanukya13/Aletheia-RECON/actions/runs/42484850949)
+[Open the live research workbench](https://aletheia-recon.onrender.com/research) · [Linux verification](https://github.com/chanukya13/Aletheia-RECON/actions/workflows/verify.yml)
 
 The free hosted preview uses temporary private workspaces. Download dossiers to retain your work across server restarts and idle shutdowns; downloaded dossiers support import and offline replay. The first request after an idle shutdown can take about a minute.
+
+![The research desk: a featured historical-remedy investigation, inspectable evidence and a clear four-step path](docs/screenshots/research-desktop.png)
+
+The [UI design notes](docs/ui-redesign.md) record the visual system, original illustration, font license and verification approach. Source inspection, interpretation exclusions, measured results and reproducible exports use the existing scientific engine.
 
 For hosted production deployment, private visitor workspaces, backups and verification, see [deployment instructions](docs/deployment.md). The local application and its existing data remain independent from the hosted service.
 

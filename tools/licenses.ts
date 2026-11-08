@@ -97,6 +97,13 @@ const fastifyLicense = readFileSync(
   "utf8",
 );
 texts.push(
+  "\nManrope font — SIL Open Font License 1.1\nhttps://github.com/google/fonts/tree/main/ofl/manrope\n",
+  readFileSync(
+    resolve(root, "apps/web/src/public/fonts/Manrope-OFL.txt"),
+    "utf8",
+  ),
+);
+texts.push(
   "\nResearch data attribution: GBIF Secretariat: GBIF Backbone Taxonomy. https://doi.org/10.15468/39omei — CC BY 4.0 https://creativecommons.org/licenses/by/4.0/. Selected raw name-match and accepted-usage responses are retained; normalized projections preserve original usages and qualifiers. See data/taxonomy/manifest.json and source provenance.\n",
 );
 texts.push(

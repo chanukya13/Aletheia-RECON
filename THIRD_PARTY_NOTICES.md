@@ -1,5 +1,7 @@
 # Third-party notices
 
+The locally bundled **Manrope** font is distributed under the [SIL Open Font License 1.1](apps/web/src/public/fonts/Manrope-OFL.txt), retained with the font. It was acquired from [Google Fonts](https://github.com/google/fonts/tree/main/ofl/manrope). The botanical still life is an AI-generated illustration, not a historical source image or experimental result; its generation provenance is recorded in [the UI redesign notes](docs/ui-redesign.md).
+
 Application code and research content have separate licenses. No license for original Aletheia RECON code is implied by an upstream dependency's license.
 
 Phase 2 retains name-match/accepted-usage responses from **GBIF Secretariat: GBIF Backbone Taxonomy**, dataset `d7dddbf4-2cf0-4f39-9b2a-bb099caae36c`, DOI [10.15468/39omei](https://doi.org/10.15468/39omei), under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The raw dataset metadata supplies the license evidence. Retrieval URLs, dates and SHA-256 digests are recorded in `data/taxonomy/manifest.json`. Normalized records are projections of those raw responses; original scientific names, authors, ranks, synonyms and accepted usages are retained. Taxonomic normalization does not establish historical botanical identification. Researcher imports remain private local drafts with redistribution disabled, including when the importer declares an open license.

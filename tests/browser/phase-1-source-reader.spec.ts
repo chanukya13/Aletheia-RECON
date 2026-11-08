@@ -1,3 +1,4 @@
+import { openNavigation } from "./phase5-helpers";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdirSync } from "node:fs";
@@ -128,6 +129,7 @@ for (const viewport of [
       page.getByRole("heading", { name: "Primary study text" }),
     ).toBeVisible();
     await expect(passage).toContainText("Bald");
+    await openNavigation(page);
     await page
       .getByRole("navigation", { name: "Main navigation" })
       .getByRole("link", { name: "Case library" })

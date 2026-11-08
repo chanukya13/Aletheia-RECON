@@ -148,26 +148,29 @@ function MeasuredPair({ catalogue }: { catalogue: OutcomeCatalogueData }) {
           </select>
         </label>
       </div>
-      <div className="research-grid">
-        {[left, right].map((o) => (
-          <article key={o.id} className="research-card">
-            <p className="eyebrow">Modern reconstruction / {o.columnLabel}</p>
-            <h2>
-              {o.value === null
-                ? "Not numerically curated"
-                : `${o.rawValue} ${o.unit}`}
-            </h2>
-            <p>
-              {o.organism} / {o.strain}
-            </p>
-            <p>
-              {o.endpoint} / {o.statistic}
-            </p>
-            <p className="form-hint">{o.assay}</p>
-            <InspectCell observation={o} catalogue={catalogue} />
-          </article>
-        ))}
-      </div>
+      <details className="research-disclosure" open={comparison === "biofilm"}>
+        <summary>Source observations and assay context</summary>
+        <div className="research-grid">
+          {[left, right].map((o) => (
+            <article key={o.id} className="research-card">
+              <p className="eyebrow">Modern reconstruction / {o.columnLabel}</p>
+              <h2>
+                {o.value === null
+                  ? "Not numerically curated"
+                  : `${o.rawValue} ${o.unit}`}
+              </h2>
+              <p>
+                {o.organism} / {o.strain}
+              </p>
+              <p>
+                {o.endpoint} / {o.statistic}
+              </p>
+              <p className="form-hint">{o.assay}</p>
+              <InspectCell observation={o} catalogue={catalogue} />
+            </article>
+          ))}
+        </div>
+      </details>
       {contrast.isPending ? (
         <p role="status">Checking the matched observations…</p>
       ) : contrast.isError ? (
@@ -178,26 +181,67 @@ function MeasuredPair({ catalogue }: { catalogue: OutcomeCatalogueData }) {
           </button>
         </div>
       ) : contrast.data ? (
-        <section className="research-card" aria-live="polite">
-          <h2>Ratio of reported medians</h2>
+        <section className="research-card outcome-result" aria-live="polite">
           {contrast.data.status === "available" ? (
             <>
-              <p className="outcome-ratio" data-testid="outcome-ratio">
-                {contrast.data.ratio!.toFixed(2)}
-              </p>
-              <p>
-                {left.columnLabel} divided by {right.columnLabel} /{" "}
-                {left.rawValue} ÷ {right.rawValue}
-              </p>
-              <p>
-                Descriptive comparison within this reported assay.
-                Interpretation of the historical word and ingredient causation
-                remain unresolved.
-              </p>
+              <figure
+                className="measurement-chart"
+                aria-labelledby="measurement-caption"
+              >
+                <figcaption id="measurement-caption">
+                  Reported median MIC{" "}
+                  <span>
+                    {strain} · {left.unit}
+                  </span>
+                </figcaption>
+                {[left, right].map((o) => (
+                  <div className="measurement-row" key={o.id}>
+                    <div>
+                      <strong>
+                        {o.columnLabel === "ES-O"
+                          ? "Onion preparation"
+                          : "Leek preparation"}
+                      </strong>
+                      <span>
+                        {o.rawValue} {o.unit}
+                      </span>
+                    </div>
+                    <div className="measurement-track" aria-hidden="true">
+                      <span
+                        className={
+                          o.columnLabel === "ES-O" ? "onion-bar" : "leek-bar"
+                        }
+                        style={{
+                          width: `${(o.value! / Math.max(left.value!, right.value!, Number.EPSILON)) * 100}%`,
+                        }}
+                      />
+                    </div>
+                    <InspectCell observation={o} catalogue={catalogue} />
+                  </div>
+                ))}
+                <p className="chart-scale">
+                  Bars start at zero. Values are reported medians, not clinical
+                  outcomes.
+                </p>
+              </figure>
+              <div className="ratio-summary">
+                <h2>Ratio of reported medians</h2>
+                <p className="outcome-ratio" data-testid="outcome-ratio">
+                  {contrast.data.ratio!.toFixed(2)}
+                </p>
+                <p>
+                  {left.columnLabel} divided by {right.columnLabel} /{" "}
+                  {left.rawValue} ÷ {right.rawValue}
+                </p>
+                <p>
+                  Within this assay only. Historical identity and ingredient
+                  causation remain unresolved.
+                </p>
+              </div>
             </>
           ) : (
             <>
-              <h3>Ratio unavailable</h3>
+              <h2>Ratio unavailable</h2>
               <ul>
                 {contrast.data.reasons.map((reason) => (
                   <li key={reason}>{reason}</li>
@@ -218,8 +262,8 @@ function MeasuredPair({ catalogue }: { catalogue: OutcomeCatalogueData }) {
           </details>
         </section>
       ) : null}
-      <section>
-        <h2>Recorded preparation differences</h2>
+      <details className="research-disclosure">
+        <summary>Recorded preparation differences</summary>
         <p>
           Both arms share garlic, wine, bovine bile and brass. The authors used
           minced onion and leek leaves in the respective preparations. The
@@ -266,13 +310,12 @@ function MeasuredPair({ catalogue }: { catalogue: OutcomeCatalogueData }) {
           span={preparation}
           label="Inspect preparation and plant parts"
         />
-      </section>
-      <section className="research-card">
+      </details>
+      <section className="research-card interpretation-choice">
         <h2>Record the interpretation you want to investigate</h2>
         <p>
-          Choose an explicit assumption for the audit. The measured outcomes do
-          not decide which meaning the historical author intended. Each option
-          opens the same eight curated arms from the 2018 study.
+          Choose a reading to examine, not a historical conclusion. Both use the
+          same eight curated 2018 assay records.
         </p>
         <div className="journey-choices">
           <Link
@@ -299,16 +342,16 @@ export default function OutcomeWorkspace() {
       api("/outcome-observations", OutcomeCatalogue, signal),
   });
   return (
-    <div className="research-workspace page-width">
+    <div className="research-workspace outcomes-workspace page-width">
       <p className="eyebrow">Interpretations and measured evidence</p>
       <h1>Compare measured outcomes.</h1>
       <p>
-        Explore the published onion and leek reconstructions by strain and
-        assay.
+        Same historical word. Two modern preparations. Compare the published
+        measurements.
       </p>
       <div className="research-notice">
-        Published measurements / Fuchs et al. 2018, Tables 1 and 2. Values are
-        reported medians with their source cells, strain and assay preserved.
+        Fuchs et al., 2018 · Reported medians from Tables 1 and 2. Every value
+        links to its source cell.
       </div>
       {catalogue.isPending ? (
         <p role="status">Reading pinned source tables…</p>

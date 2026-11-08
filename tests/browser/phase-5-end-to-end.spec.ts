@@ -1,3 +1,4 @@
+import { openNavigation } from "./phase5-helpers";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFileSync } from "node:fs";
@@ -46,6 +47,7 @@ for (const viewport of [
           await response.finished();
         }),
       );
+      await openNavigation(page);
       await page
         .getByRole("navigation", { name: "Main navigation" })
         .getByRole("link", { name: "Dossiers", exact: true })
@@ -160,6 +162,7 @@ for (const viewport of [
     );
     // Returning through client navigation must show the newly saved namespace,
     // and an editable copy must invalidate an already cached case library.
+    await openNavigation(page);
     await page
       .getByRole("navigation", { name: "Main navigation" })
       .getByRole("link", { name: "Case library", exact: true })
@@ -181,6 +184,7 @@ for (const viewport of [
           exact: true,
         }),
       ).toBeVisible();
+      await openNavigation(page);
       await page
         .getByRole("navigation", { name: "Main navigation" })
         .getByRole("link", { name: "Case library", exact: true })
@@ -309,6 +313,14 @@ test("actual evaluation ledger, malformed import, keyboard and zoom-equivalent r
   await page.setViewportSize({ width: 720, height: 450 });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/evaluation");
+  await page
+    .locator("summary")
+    .filter({ hasText: "Authentic development diagnostic" })
+    .click();
+  await page
+    .locator("summary")
+    .filter({ hasText: "Synthetic engineering panel" })
+    .click();
   await expect(
     page.getByRole("heading", {
       name: "Authentic development diagnostic",
@@ -328,6 +340,7 @@ test("actual evaluation ledger, malformed import, keyboard and zoom-equivalent r
     .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
     .analyze();
   expect(axe.violations.map((v) => v.id)).toEqual([]);
+  await openNavigation(page);
   await page
     .getByRole("navigation", { name: "Main navigation" })
     .getByRole("link", { name: "Dossiers", exact: true })

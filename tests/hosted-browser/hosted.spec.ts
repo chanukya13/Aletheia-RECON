@@ -25,8 +25,8 @@ for (const width of [1440, 390])
     const health = await page.request.get("/api/v1/health");
     if ((await health.json()).workspaceStorage === "temporary") {
       await expect(
-        page.getByRole("note").filter({ hasText: "Free preview" }),
-      ).toContainText("Download dossiers to keep your work");
+        page.getByRole("note").filter({ hasText: "Temporary workspace" }),
+      ).toContainText("Download dossiers to keep it");
     }
     await expect(
       page.getByRole("button", { name: "Private workspace", exact: true }),

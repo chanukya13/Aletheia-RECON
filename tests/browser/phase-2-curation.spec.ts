@@ -1,3 +1,4 @@
+import { openNavigation } from "./phase5-helpers";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdirSync } from "node:fs";
@@ -132,6 +133,7 @@ for (const viewport of [
         })
         .getByRole("button", { name: "Use in draft" })
         .click();
+    await openNavigation(page);
     await page
       .getByRole("navigation", { name: "Main navigation" })
       .getByRole("link", { name: "Case library" })

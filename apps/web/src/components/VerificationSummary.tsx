@@ -45,15 +45,14 @@ export function VerificationSummary() {
         </div>
       </div>
       <p>
-        Seed corpus checked automatically against the retained sources, exact
-        spans and artifact hashes. Independent human adjudication is unrecorded.
+        Automated checks against retained sources. Independent human
+        adjudication remains unrecorded.
       </p>
       <h3>Source-cell retrieval / development fixture</h3>
       <p>
-        {report.supportedQueries} published-cell questions and{" "}
-        {report.controlledQueries} separately labeled context-conflict
-        questions. Each method receives the same fields and candidate
-        representations.
+        {report.supportedQueries} published-cell questions +{" "}
+        {report.controlledQueries} controlled context conflicts. Same inputs for
+        every method.
       </p>
       <div
         className="table-scroll"
@@ -92,9 +91,9 @@ export function VerificationSummary() {
         </table>
       </div>
       <p>
-        The metadata-filtered baseline provides the stronger comparison. The
-        rows above retain its actual result alongside RECON. These scores
-        concern source-cell location and controlled context conflicts.
+        The filtered baseline is the stronger comparison. These scores test
+        source location and controlled conflicts, not historical identity or
+        efficacy.
       </p>
       <a
         className="text-button"

@@ -2,6 +2,13 @@ import { expect, type Page } from "@playwright/test";
 import { mkdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { spawnSync } from "node:child_process";
+export async function openNavigation(page: Page) {
+  const menu = page.getByRole("button", {
+    name: "Open navigation",
+    exact: true,
+  });
+  if (await menu.isVisible()) await menu.click();
+}
 export async function freezeCase(
   page: Page,
   id = "balds-eyesalve",

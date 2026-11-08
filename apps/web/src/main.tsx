@@ -40,9 +40,11 @@ import { SourceReader } from "./components/SourceReader";
 import { Dialog } from "./components/Dialog";
 import { ImportDialog } from "./components/ImportDialog";
 import { ResearchHome, ResearchJourney } from "./components/ResearchJourney";
+import { Icon } from "./components/Icon";
 import "./styles.css";
 import "./curation.css";
 import "./dossiers.css";
+import "./design.css";
 const ScenarioWorkspace = lazy(() => import("./components/ScenarioWorkspace"));
 const MaterialVersionCompare = lazy(
   () => import("./components/MaterialVersionCompare"),
@@ -111,6 +113,8 @@ function formatRecordedValue(value: unknown): string {
 function Shell() {
   const health = useHealth();
   const [statusOpen, setStatusOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const location = useLocation();
   const main = useRef<HTMLElement>(null);
   const previousPath = useRef(location.pathname);
@@ -124,7 +128,15 @@ function Shell() {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <header className="app-header">
+      <header
+        className={`app-header${navOpen ? " nav-open" : ""}`}
+        onKeyDown={(event) => {
+          if (event.key === "Escape" && navOpen) {
+            setNavOpen(false);
+            menuButton.current?.focus();
+          }
+        }}
+      >
         <Link
           className="brand"
           to="/research"
@@ -137,7 +149,23 @@ function Shell() {
             Aletheia <b>RECON</b>
           </span>
         </Link>
-        <nav aria-label="Main navigation">
+        <p className="rail-description">The evidence research desk</p>
+        <button
+          className="menu-toggle"
+          ref={menuButton}
+          aria-label={navOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={navOpen}
+          aria-controls="main-navigation"
+          onClick={() => setNavOpen(!navOpen)}
+        >
+          <Icon name={navOpen ? "close" : "menu"} />
+          <span>{navOpen ? "Close" : "Menu"}</span>
+        </button>
+        <nav
+          id="main-navigation"
+          aria-label="Main navigation"
+          onClick={() => setNavOpen(false)}
+        >
           <Link
             className="nav-link"
             to="/research"
@@ -145,7 +173,7 @@ function Shell() {
               location.pathname === "/research" ? "page" : undefined
             }
           >
-            Start here
+            <Icon name="home" /> Start here
           </Link>
           <Link
             className="nav-link"
@@ -154,14 +182,14 @@ function Shell() {
               location.pathname.startsWith("/cases") ? "page" : undefined
             }
           >
-            Case library
+            <Icon name="book" /> Case library
           </Link>
           <Link
             className="nav-link"
             to="/trace"
             aria-current={location.pathname === "/trace" ? "page" : undefined}
           >
-            Interpretation trace
+            <Icon name="trace" /> Interpretation trace
           </Link>
           <Link
             className="nav-link"
@@ -170,7 +198,7 @@ function Shell() {
               location.pathname === "/outcomes" ? "page" : undefined
             }
           >
-            Measured outcomes
+            <Icon name="flask" /> Measured outcomes
           </Link>
           <Link
             className="nav-link"
@@ -181,7 +209,7 @@ function Shell() {
                 : undefined
             }
           >
-            Dossiers
+            <Icon name="folder" /> Dossiers
           </Link>
           <Link
             className="nav-link"
@@ -190,7 +218,7 @@ function Shell() {
               location.pathname.startsWith("/evaluation") ? "page" : undefined
             }
           >
-            Evaluation
+            <Icon name="check" /> Evaluation
           </Link>
         </nav>
         <button
@@ -211,12 +239,16 @@ function Shell() {
       </header>
       <main id="main" ref={main} tabIndex={-1}>
         {health.data?.workspaceStorage === "temporary" ? (
-          <p className="hosting-notice" role="note">
-            <strong>Free preview · temporary workspace.</strong> Download
-            dossiers to keep your work. Server restarts and idle shutdowns clear
-            saved edits, imports and dossiers. Downloaded files can be imported
-            again.
-          </p>
+          <div className="hosting-notice" role="note">
+            <Icon name="download" size={16} />
+            <p>
+              <strong>Temporary workspace.</strong> Server restarts clear saved
+              work. Download dossiers to keep it.
+            </p>
+            <button className="text-button" onClick={() => setStatusOpen(true)}>
+              Details
+            </button>
+          </div>
         ) : null}
         <ResearchJourney />
         <Routes>
